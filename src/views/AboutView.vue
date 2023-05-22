@@ -20,6 +20,15 @@
         <p>Esbjerg har i flere år manglet gængse øvelokaler med mulighed for indspilning, og her vil Kanten give muligheden for at benytte sig af et lydstudie samt et øvelokale af høj kvalitet. I kraft af Kantens vision om at hjælpe det musikalske vækstlag med at skabe musik, så vil der tilbydes en lydtekniker som ifølge aftale kan undervise i lydstudieteknik - alt efter behov. Med Kraftværkets placering i Østerbyen vil vi løfte interessen for musik, særligt for de lokale unge. Det vil vi f.eks. gøre med undervisning i øjenhøjde og med kendskab til unge i området. Kraftværket kan benyttes af alle der spiller, eller gerne vil spille musik.</p>
       </div>
     </div>
+
+    <div class="item4">
+      <img id="kraftværket" src="../assets/krafværket-studio.jpg" alt="">
+    </div>
+
+    <div class="item5">
+      <h3>KANTENS</h3>
+      <h2>samarbejdspartnere</h2>
+    </div>
 </template>
   
 <style>
@@ -77,6 +86,7 @@ h1 {
   border-color: white;
   padding: 20px;
   padding-top: 50px;
+  margin-bottom: 30px;
   
 }
 
@@ -92,5 +102,26 @@ p {
   font-size: 16px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+#kraftværket {
+  width: 90%;
+  margin: auto;
+}
+
+
+.item5 {
+  background-color: violet;
+}
+
+h3 {
+  font-size: 40px;
+  color: white;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 </style>
   
