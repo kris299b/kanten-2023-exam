@@ -11,12 +11,8 @@
 </script>
 
 <style scoped>
-body {
-  background-color: black;
-}
-
 .container1 {
-
+  background-color: black;
   height: 500px;
 }
 
