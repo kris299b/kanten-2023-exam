@@ -74,6 +74,7 @@ body {
 h1 {
   font-size: 50px;
   padding-bottom: 20px;
+  letter-spacing: 8px;
 }
 
 .p {
@@ -105,7 +106,7 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
   color: white;
   padding-bottom: 10px;
