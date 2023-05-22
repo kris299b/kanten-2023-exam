@@ -1,6 +1,6 @@
 <template>
     <div>
-        helloooo
+        programside
     </div>
 </template>
 
@@ -9,7 +9,5 @@
 </script>
 
 <style scoped>
-body {
-    background-color: black;
-}
+
 </style>
