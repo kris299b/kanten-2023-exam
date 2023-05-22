@@ -1,6 +1,6 @@
 <template>
     <div>
-        program
+        helloooo
     </div>
 </template>
 
@@ -8,6 +8,8 @@
 
 </script>
 
-<style lang="scss" scoped>
-
+<style scoped>
+body {
+    background-color: black;
+}
 </style>
