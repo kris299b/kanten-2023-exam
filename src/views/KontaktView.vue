@@ -1,6 +1,6 @@
 <template>
     <div>
-        Kontakt side 
+        Kontakt side heeey
     </div>
 </template>
 
