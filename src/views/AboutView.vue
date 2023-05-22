@@ -86,8 +86,6 @@ h1 {
   height: 280px;
   width: 80%;
   margin: auto;
-  border: solid 3px;
-  border-color: white;
   padding: 20px;
   padding-top: 30px;
   margin-top: 50px;
@@ -100,8 +98,6 @@ h1 {
   height: 270px;
   width: 80%;
   margin: auto;
-  border: solid 3px;
-  border-color: white;
   padding: 20px;
   padding-top: 50px;
   margin-bottom: 30px;
