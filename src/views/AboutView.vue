@@ -25,9 +25,27 @@
       <img id="kraftværket" src="../assets/krafværket-studio.jpg" alt="">
     </div>
 
-    <div class="item5">
-      <h3>KANTENS</h3>
-      <h2>samarbejdspartnere</h2>
+
+    <div class="container3">
+      <div class="item5">
+        <h3>KANTENS</h3>
+        <h4>samarbejdspartnere</h4>
+      </div>
+
+      <div class="item6">
+        <div class="inner-item1">
+          <p>Sex & Samfund</p>
+          <p>Esbjerg Kommune</p>
+          <p>Copenhagen Pride</p>
+          <p>Volcano</p>
+        </div>
+
+        <div class="inner-item2">
+          <p>Royalties</p>
+          <p>Roskilde Festival</p>
+          <p>Mino Ung</p>
+        </div>
+      </div>
     </div>
 </template>
   
@@ -43,7 +61,7 @@ body {
 }
 
 #collage-aboutpage {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .centered {
@@ -109,17 +127,56 @@ p {
 }
 
 
+.container3 {
+  height: 500px;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
 .item5 {
-  background-color: violet;
+  width: 45%;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: solid 2px;
+  border-left: solid 2px;
+  border-right: solid 2px;
+  border-color: white;
 }
 
 h3 {
-  font-size: 40px;
+  font-size: 45px;
   color: white;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 15px;
 }
 
-p {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+h4 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+.item6 {
+  height: 180px;
+  width: 45%;
+  display: flex;
+  margin: auto;
+  border-bottom: solid 2px;
+  border-left: solid 2px;
+  border-right: solid 2px;
+  border-color: white;
+}
+
+.inner-item1 {
+  width: 150px;
+  margin: auto;
+}
+
+.inner-item2 {
+  width: 150px;
+  margin: auto;
 }
 
 
