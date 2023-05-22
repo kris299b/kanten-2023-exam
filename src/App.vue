@@ -51,8 +51,8 @@
 <!--Footer container-->
 <footer class="bg-black text-center text-white dark:bg-black">
   <div class="container pt-1">
-    <div class="mb-5 mt-5 flex justify-center">
-      <a href="#!" class="mr-9 text-neutral-800 dark:text-neutral-200">
+    <div class="mb-1 mt-3 flex justify-center">
+      <a href="#!" class="mr-5 text-neutral-800 dark:text-neutral-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
@@ -78,12 +78,7 @@
   <!--Copyright section-->
   <div
     class="bg-black p-3 text-center text-neutral-700 dark:bg-black dark:text-neutral-200">
-    © 2023 Copyright:
-    <a
-      class="text-neutral-800 dark:text-neutral-400"
-      href="https://tailwind-elements.com/"
-      >KANTEN</a
-    >
+    © 2023 Copyright: KANTEN
   </div>
 </footer>
 
