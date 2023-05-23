@@ -14,7 +14,7 @@
           </button>
         </div>
     </form>
-      <div>
+      <div class="flex flex-row place-content-center">
         <div v-for="todo in todos" :key="todo">
           <div class="text-center ml-10 mr-10 mt-10 mb-10 max-w-xxl bg-white border border-black shadow dark:bg-black dark:border-black">
               <a href="#">

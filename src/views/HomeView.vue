@@ -2,17 +2,44 @@
   <div class="relative overflow-hidden bg-cover bg-no-repeat">
       <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed">
         <div class="flex items-center">
-          <div class="h-screen w-screen text-center bg-black bg-opacity-20">
-            <p class="font-sans sm:Roboto hidden md:block font-sans text-8xl text-white font-semibold mt-20 tracking-widest">KANTEN</p>
-            <p class="font-sans sm:Roboto hidden md:block font-sans text-2xl text-white font-normal mt-3 mb-6 tracking-widest">KULTUR | MUSIK | FÆLLESSKAB</p>
-            <button class="text-md font-bold bg-black hover:bg-black text-white font-bold hover:text-white py-3 px-6 border-2 border border-white hover:border-white tracking-widest">
+          <div class="h-screen w-screen text-center bg-black bg-opacity-10">
+            <p class="font-sans sm:Roboto hidden md:block font-sans text-8xl text-black font-semibold mt-20 tracking-widest">KANTEN</p>
+            <p class="font-sans sm:Roboto hidden md:block font-sans text-2xl text-white font-normal mt-2 mb-5 tracking-widest">KULTUR | MUSIK | FÆLLESSKAB</p>
+            <button class="text-sm font-bold bg-black hover:bg-black text-white font-bold hover:text-white py-2 px-4 mr-5 border-2 border border-black hover:border-white tracking-widest">
             <RouterLink to="/events">SE EVENTS</RouterLink>
+            </button>
+            <button class="text-sm font-bold bg-transparent hover:bg-black text-black font-bold hover:text-white py-2 px-4 border-2 border border-black hover:border-black tracking-widest">
+            <RouterLink to="/frivillig">BLIV FRIVILLIG</RouterLink>
             </button>
           </div>
         </div>
       </div>
-    <img class="image" src="../assets/kanten-kollage-done.jpg" alt="">
+    <img class="image" src="../assets/kollage.jpg" alt="">
   </div>
+
+  <section class="bg-white dark:bg-black">
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+      <div class="mx-auto max-w-screen-md sm:text-center">
+          <p class="mb-4 text-2xl font-normal sm:text-4xl text-white tracking-widest">NYHEDSBREV</p>
+          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Tilmeld dig vores nyhedsbrev med din email, og hold dig opdateret på vores events, og fede arrangementer. </p>
+          <form action="#">
+              <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                  <div class="relative w-full">
+                      <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
+                      <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                          <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                      </div>
+                      <input class="block p-3 pl-10 w-full text-sm text-black bg-white border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Skriv din email" type="email" id="email" required="">
+                  </div>
+                  <div>
+                      <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white border cursor-pointer bg-primary-700 border-primary-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Tilmeld</button>
+                  </div>
+              </div>
+              <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">Vi beskytter din data. <a href="#" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Læs vores Privacy Policy</a>.</div>
+          </form>
+      </div>
+  </div>
+</section>
 </template>
 
 <script setup>

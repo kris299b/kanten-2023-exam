@@ -1,12 +1,12 @@
 <template>
     <div>
         <p class="font-sans text-center sm:Roboto hidden md:block font-sans text-4xl text-black font-semibold mt-20 mb-10 tracking-widest">PROGRAM</p>
-        <p class="font-sans text-center sm:Roboto hidden md:block font-sans text-2xl text-black font-semibold mb-20 tracking-widest">KOMMENDE EVENTS</p>
+        <p class="font-sans text-center sm:Roboto hidden md:block font-sans text-2xl text-black font-semibold mb-10 tracking-widest">KOMMENDE EVENTS</p>
     </div>
 
-    <div>
+    <div class="flex flex-row place-content-center">
     <div v-for="todo in todos" :key="todo">
-      <div class="text-center ml-10 mr-10 mt-10 mb-10 max-w-xxl bg-white border border-black shadow dark:bg-black dark:border-black">
+      <div class="text-center ml-10 mr-10 mt-5 mb-10 max-w-xxl bg-white border border-black shadow dark:bg-black dark:border-black">
           <a href="#">
             <img class="rounded-t-lg" src="" alt="" />
           </a>

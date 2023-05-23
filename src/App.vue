@@ -55,7 +55,7 @@
       <a href="#!" class="mr-5 text-neutral-800 dark:text-neutral-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
+          class="h-4 w-4"
           fill="currentColor"
           viewBox="0 0 24 24">
           <path
@@ -65,7 +65,7 @@
       <a href="#!" class="text-neutral-800 dark:text-neutral-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          class="h-5 w-5"
+          class="h-4 w-4"
           fill="currentColor"
           viewBox="0 0 24 24">
           <path
@@ -78,7 +78,7 @@
   <!--Copyright section-->
   <div
     class="bg-black p-3 text-center text-neutral-700 dark:bg-black dark:text-neutral-200">
-    © 2023 Copyright: KANTEN
+    © 2023 Copyright: Kanten
   </div>
 </footer>
 
