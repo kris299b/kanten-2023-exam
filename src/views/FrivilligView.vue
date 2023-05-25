@@ -12,12 +12,12 @@
   <div class="container2">
     <div class="item2">
       <h2>HVORFOR BLIVE FRIVILLIG HOS KANTEN?</h2>
-      <p id="text1">Som frivillig hos Kanten, vil du få mulighed for at prøve kræfter af med en masse forskellige arbejdsopgaver der relatere sig til kulturaktør og eventbranchen. Hvis du har et felt eller område du er særligt interesseret i, kan du ved hjælp af mesterlære hos vores kyndige folk i Kanten, opnå og mestre den færdighed til det næste niveau og for alvor dygtiggøre dig. Du vil derudover tage del i et helt unikt fællesskab, hvor alle er velkommen præcis som de er og hvor du vil føle dig inkluderet. Efter du har ansøgt som frivillig, vil du blive inviteret ind til en hyggelig samtale, hvor vi vil fortælle dig lidt mere omkring de forskellige arbejdsopgaver og grupper man som frivillig arbejder med/i. Her vil vi også få mulighed for at lære dig lidt bedre at kende og du vil selvfølgelig blive vist rundt i Huset Esbjerg, som er her Kanten holder til.</p>
+      <p>Som frivillig hos Kanten, vil du få mulighed for at prøve kræfter af med en masse forskellige arbejdsopgaver der relatere sig til kulturaktør og eventbranchen. Hvis du har et felt eller område du er særligt interesseret i, kan du ved hjælp af mesterlære hos vores kyndige folk i Kanten, opnå og mestre den færdighed til det næste niveau og for alvor dygtiggøre dig. Du vil derudover tage del i et helt unikt fællesskab, hvor alle er velkommen præcis som de er og hvor du vil føle dig inkluderet. Efter du har ansøgt som frivillig, vil du blive inviteret ind til en hyggelig samtale, hvor vi vil fortælle dig lidt mere omkring de forskellige arbejdsopgaver og grupper man som frivillig arbejder med/i. Her vil vi også få mulighed for at lære dig lidt bedre at kende og du vil selvfølgelig blive vist rundt i Huset Esbjerg, som er her Kanten holder til.</p>
     </div>
 
     <div class="item3">
       <h2>LIDT VIGTIG INFORMATION</h2>
-      <p id="text2">Går du og overvejer at blive en del af Kanten-familien, som frivillig, er det vigtigt for os at understrege vigtigheden af det arbejde du som frivillig vil varetage. Det frivillige arbejde du udfører i sammenhold med de andre frivillige, er dét der er hele essensen af vores forening. Det er dig, og kun dig der vælger hvor meget tid og kræfter du har lyst til at ligge i Kanten, det skal være lige så sjovt for dig, som det er for os at være så heldige at have dig med ombord. Det eneste vi forventer af dig som frivillig er, at du skal komme til bestyrelsen hvis det bliver for hårdt, ubehageligt eller lignende at være frivillig. Så finder vi ud af det sammen.</p>
+      <p>Går du og overvejer at blive en del af Kanten-familien, som frivillig, er det vigtigt for os at understrege vigtigheden af det arbejde du som frivillig vil varetage. Det frivillige arbejde du udfører i sammenhold med de andre frivillige, er dét der er hele essensen af vores forening. Det er dig, og kun dig der vælger hvor meget tid og kræfter du har lyst til at ligge i Kanten, det skal være lige så sjovt for dig, som det er for os at være så heldige at have dig med ombord. Det eneste vi forventer af dig som frivillig er, at du skal komme til bestyrelsen hvis det bliver for hårdt, ubehageligt eller lignende at være frivillig. Så finder vi ud af det sammen.</p>
     </div>
   </div>
 
@@ -87,14 +87,16 @@ h1 {
 }
 
 .container2 {
-  background-color: rgb(0, 0, 0);
+  background-color:black;
   height: 520px;
+  padding-top: 40px;
 }
 .item2 {
-  background-color:rgb(0, 0, 0);
+  background-color:black;
   width: 80%;
   margin: auto;
-  padding-top: 40px;
+  padding-top: 0;
+  margin-bottom: 40px;
 }
 .item3 {
   background-color:black;
@@ -103,22 +105,17 @@ h1 {
   padding-top: 0;
 }
 
-#text1 {
+p {
   color: #e7e7e7;
-  text-align:justify;
   font-size: 16px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#text2 {
-  color: #e7e7e7;
   text-align:justify;
-  font-size: 16px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h2 {
   color: #e7e7e7;
+  font-size: 22px;
+  font-weight: 600;
 }
 
 </style>

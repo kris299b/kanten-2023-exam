@@ -4,7 +4,7 @@
         <img id="collage-aboutpage" src="../assets/collage-for-aboutpage.png" alt="">
         <div class="centered">
           <h1>HVEM ER VI?</h1>
-          <p>Kanten bliver Esbjergs nye kulturfællesskab, drevet af Foreningen Kanten. Vores vision er at skabe en platform for det kreative vækstlag, som mangler en synlig plads i Esbjergs kulturliv. Gennem denne platform ønsker vi at støtte de fællesskaber der opstår af spirende kreative miljøer. Kanten vil give det underrepræsenterede vækstlag en scene at stå på - dette gør vi gennem en bred vifte af projekter der bl.a. indeholder events, klubaftener, øvelokaler og et lydstudie. </p>
+          <p id="kanten">Kanten bliver Esbjergs nye kulturfællesskab, drevet af Foreningen Kanten. Vores vision er at skabe en platform for det kreative vækstlag, som mangler en synlig plads i Esbjergs kulturliv. Gennem denne platform ønsker vi at støtte de fællesskaber der opstår af spirende kreative miljøer. Kanten vil give det underrepræsenterede vækstlag en scene at stå på - dette gør vi gennem en bred vifte af projekter der bl.a. indeholder events, klubaftener, øvelokaler og et lydstudie. </p>
         </div>
       </div>
     </div>
@@ -77,9 +77,9 @@ h1 {
   letter-spacing: 8px;
 }
 
-.p {
+#kanten {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align:justify;
+  text-align: center;
 }
 
 
