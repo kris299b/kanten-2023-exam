@@ -52,9 +52,15 @@
 </script>
 
 <style scoped>
+body {
+  background-color: black;
+}
 .container1 {
   background-color: black;
-  height: 500px;
+}
+
+.item1 {
+  height: 420px;
   position: relative;
   text-align: center;
   color: white;
@@ -67,12 +73,21 @@
 .centered {
   position: absolute;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
+h1 {
+  font-size: 50px;
+  padding-bottom: 20px;
+}
 
 p {
   color: white;
 }
 
+
+.container2 {
+  background-color: black;
+}
 </style>

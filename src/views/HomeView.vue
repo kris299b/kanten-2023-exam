@@ -15,7 +15,7 @@
   </div>
 
   <!--Dette område er Mailchimp-signup-->
-<div id="mc_embed_signup">
+<div class="signup-form" id="mc_embed_signup">
   <form action="https://gmail.us21.list-manage.com/subscribe/post?u=4647b8b842810351f756a5c6d&amp;id=322f56a61f&amp;v_id=110&amp;f_id=003354e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
     <div class="indicates-required"><span class="asterisk">*</span> Påkrævet</div>
@@ -47,7 +47,7 @@
 	<div id="mce-responses" class="clear foot">
 		<div class="response" id="mce-error-response" style="display:none"></div>
 		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	</div>    <!-- Do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4647b8b842810351f756a5c6d_322f56a61f" tabindex="-1" value=""></div>
         <div class="optionalParent">
             <div class="clear foot">
@@ -63,6 +63,13 @@
 <script setup>
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+.signup-form {
+  margin: auto;
+}
+
+#mc_embed_signup {
+  background-color: black;
+}
 
 </style>
