@@ -38,7 +38,7 @@
           </div>
           <div class="sm:col-span-2">
               <label for="message" class="block mb-2 text-sm font-semibold text-gray-900 dark:text-gray-300">Skriv lidt om dig selv</label>
-              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Fortæl om dig selv..."></textarea>
+              <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 shadow-sm border border-gray-300 focus:ring-slate-50 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Fortæl om dig selv..."></textarea>
           </div>
           <button type="submit" class="py-1 px-5 text-sm md:text-base lg:text-base font-semibold text-center text-white bg-black border-2 border-slate-300 sm:w-fit hover:bg-orange-400 hover:text-black hover:font-semibold hover:border-orange-400 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">SEND</button>
       </form>
@@ -79,7 +79,7 @@ body {
 
 h1 {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 600;
   padding-bottom: 20px;
   color: #e7e7e7;
 }
