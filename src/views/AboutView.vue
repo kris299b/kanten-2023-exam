@@ -34,16 +34,16 @@
 
       <div class="item6">
         <div class="inner-item1">
-          <p>Sex & Samfund</p>
-          <p>Esbjerg Kommune</p>
-          <p>Copenhagen Pride</p>
-          <p>Volcano</p>
+          <p id="S&S" Sex & Samfund></p>
+          <p id="EK" Esbjerg Kommune></p>
+          <p id="CPHP" Copenhagen Pride></p>
+          <p id="Vol" Volcano></p>
         </div>
 
         <div class="inner-item2">
-          <p>Royalties</p>
-          <p>Roskilde Festival</p>
-          <p>Mino Ung</p>
+          <p id="Royalties" Royalties></p>
+          <p id="RF" Roskilde Festival></p>
+          <p id="MU" Mino Ung></p>
         </div>
       </div>
     </div>
