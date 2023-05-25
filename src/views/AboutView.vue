@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container1">
       <div class="item1">
         <img id="collage-aboutpage" src="../assets/collage-for-aboutpage.png" alt="">
         <div class="centered">
@@ -21,18 +21,18 @@
       </div>
     </div>
 
-    <div class="item4">
+    <div class="container3">
       <img id="kraftværket" src="../assets/krafværket-studio.jpg" alt="">
     </div>
 
 
-    <div class="container3">
-      <div class="item5">
+    <div class="container4">
+      <div class="item4">
         <h3>KANTENS</h3>
         <h4>samarbejdspartnere</h4>
       </div>
 
-      <div class="item6">
+      <div class="item5">
         <div class="inner-item1">
           <a id="ss" href="https://sexogsamfund.dk/">Sex & Samfund</a><br>
           <a href="https://www.esbjerg.dk/">Esbjerg Kommune</a><br>
@@ -48,12 +48,10 @@
     </div>
 </template>
   
-<style>
-body {
-  background-color: black;
-}
+<style scoped>
 
-.container {
+.container1 {
+  background-color: rgb(103, 27, 27);
   position: relative;
   text-align: center;
   color: #e7e7e7;
@@ -83,8 +81,11 @@ h1 {
 }
 
 
-
+.container2 {
+  background-color: black;
+}
 .item2 {
+  background-color: black;
   height: 280px;
   width: 80%;
   margin: auto;
@@ -94,9 +95,8 @@ h1 {
   margin-bottom: 40px;
 
 }
-
-
 .item3 {
+  background-color: black;
   height: 270px;
   width: 80%;
   margin: auto;
@@ -126,13 +126,15 @@ p {
 }
 
 
-.container3 {
+.container4 {
+  background-color: black;
   height: 500px;
   margin-top: 40px;
   padding-top: 40px;
 }
 
-.item5 {
+.item4 {
+  background-color: black;
   width: 45%;
   margin: auto;
   margin-top: 40px;
@@ -144,7 +146,6 @@ p {
 }
 
 h3 {
-  font-size: 45px;
   color: #e7e7e7;
   text-align: center;
   font-weight: bold;
@@ -157,7 +158,7 @@ h4 {
   text-align: center;
 }
 
-.item6 {
+.item5 {
   height: 180px;
   width: 45%;
   display: flex;

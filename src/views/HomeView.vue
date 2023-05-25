@@ -15,61 +15,12 @@
   </div>
 
   <!--Dette område er Mailchimp-signup-->
-<div class="signup-form" id="mc_embed_signup">
-  <form action="https://gmail.us21.list-manage.com/subscribe/post?u=4647b8b842810351f756a5c6d&amp;id=322f56a61f&amp;v_id=110&amp;f_id=003354e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-    <div class="indicates-required"><span class="asterisk">*</span> Påkrævet</div>
-<div class="mc-field-group">
-	<label for="mce-FNAME">Fornavn<span class="asterisk">*</span>
-  </label>
-	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required>
-	<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
-</div>
-<div class="mc-field-group">
-	<label for="mce-LNAME">Efternavn</label>
-	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-	<span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
-</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email adresse<span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-	<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
-</div>
-<div id="mergeRow-gdpr" class="mergeRow gdpr-mergeRow content__gdprBlock mc-field-group">
-    <div class="content__gdpr">
-        <p>Du kan til enhver tid afmelde medlemsskabet ved at klikke på linket i footeren i bunden af vores mails.</p>
-    </div>
-    <div class="content__gdprLegal">
-        <p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href="https://mailchimp.com/legal/terms" target="_blank">Learn more about Mailchimp's privacy practices here.</a></p>
-    </div>
-</div>
-	<div id="mce-responses" class="clear foot">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div>    <!-- Do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4647b8b842810351f756a5c6d_322f56a61f" tabindex="-1" value=""></div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                <p class="brandingLogo"><a href="http://eepurl.com/irZaUM" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
-            </div>
-        </div>
-    </div>
-</form>
-</div>
+
 </template>
 
 <script setup>
 </script>
 
 <style scoped>
-.signup-form {
-  margin: auto;
-}
-
-#mc_embed_signup {
-  background-color: black;
-}
 
 </style>
