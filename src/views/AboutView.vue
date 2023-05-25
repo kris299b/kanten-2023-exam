@@ -57,7 +57,7 @@ body {
 .container {
   position: relative;
   text-align: center;
-  color: white;
+  color: #e7e7e7;
 }
 
 #collage-aboutpage {
@@ -108,12 +108,12 @@ h1 {
 h2 {
   font-size: 22px;
   font-weight: bold;
-  color: white;
+  color: #e7e7e7;
   padding-bottom: 10px;
 }
 
 p {
-  color: white;
+  color: #e7e7e7;
   font-size: 16px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -138,12 +138,12 @@ p {
   border-top: solid 2px;
   border-left: solid 2px;
   border-right: solid 2px;
-  border-color: white;
+  color: #e7e7e7;
 }
 
 h3 {
   font-size: 45px;
-  color: white;
+  color: #e7e7e7;
   text-align: center;
   font-weight: bold;
   letter-spacing: 15px;
@@ -151,7 +151,7 @@ h3 {
 
 h4 {
   font-size: 25px;
-  color: white;
+  color: #e7e7e7;
   text-align: center;
 }
 
@@ -163,7 +163,7 @@ h4 {
   border-bottom: solid 2px;
   border-left: solid 2px;
   border-right: solid 2px;
-  border-color: white;
+  color: #e7e7e7;
 }
 
 .inner-item1 {
