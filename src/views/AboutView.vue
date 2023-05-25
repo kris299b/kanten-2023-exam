@@ -34,16 +34,15 @@
 
       <div class="item6">
         <div class="inner-item1">
-          <p id="S&S" Sex & Samfund></p>
-          <p id="EK" Esbjerg Kommune></p>
-          <p id="CPHP" Copenhagen Pride></p>
-          <p id="Vol" Volcano></p>
+          <a id="ss" href="https://sexogsamfund.dk/">Sex & Samfund</a><br>
+          <a href="https://www.esbjerg.dk/">Esbjerg Kommune</a><br>
+          <a href="https://www.copenhagenpride.dk/">Copenhagen Pride</a>
         </div>
 
         <div class="inner-item2">
-          <p id="Royalties" Royalties></p>
-          <p id="RF" Roskilde Festival></p>
-          <p id="MU" Mino Ung></p>
+          <a href="https://royalties.dk/">Royalties</a><br>
+          <a href="https://www.roskilde-festival.dk/da/">Roskilde Festival</a><br>
+          <a href="https://www.minoung.dk/">Mino Ung</a>
         </div>
       </div>
     </div>
@@ -171,14 +170,21 @@ h4 {
 
 .inner-item1 {
   width: 150px;
+  height: 80px;
   margin: auto;
 }
 
+
 .inner-item2 {
   width: 150px;
-  height: 100px;
+  height: 80px;
   margin: auto;
 }
+
+#ss {
+  margin-bottom: 20px;
+}
+
 
 
 </style>
