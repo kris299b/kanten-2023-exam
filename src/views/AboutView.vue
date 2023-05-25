@@ -73,12 +73,14 @@ body {
 
 h1 {
   font-size: 50px;
+  font-weight: 600;
   padding-bottom: 20px;
   letter-spacing: 8px;
 }
 
 .p {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align:justify;
 }
 
 
@@ -116,6 +118,7 @@ p {
   color: #e7e7e7;
   font-size: 16px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align:justify;
 }
 
 #kraftværket {
@@ -173,6 +176,7 @@ h4 {
 
 .inner-item2 {
   width: 150px;
+  height: 100px;
   margin: auto;
 }
 
