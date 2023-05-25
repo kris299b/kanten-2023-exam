@@ -181,11 +181,9 @@ h4 {
   margin: auto;
 }
 
-#ss {
-  margin-bottom: 20px;
+a:hover {
+  color: #9333ea;
 }
-
-
 
 </style>
   
