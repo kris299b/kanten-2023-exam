@@ -44,12 +44,12 @@
       </form>
   </div>
 </section>
-
 </template>
 
-<script>
 
+<script>
 </script>
+
 
 <style scoped>
 .box1 {
@@ -87,22 +87,23 @@ h1 {
 }
 
 .box2 {
-  background-color:black;
+  background-color:rgb(0, 0, 0);
   height: 520px;
   padding-top: 40px;
 }
 .inner-box2 {
-  background-color:black;
+  background-color:rgb(0, 0, 0);
   width: 80%;
   margin: auto;
   padding-top: 0;
   margin-bottom: 40px;
 }
 .box3 {
-  background-color:black;
+  background-color:rgb(0, 0, 0);
   width: 80%;
   margin: auto;
-  padding-top: 0;
+  margin-top: 40px;
+  padding-top: 40px;
 }
 
 p {
