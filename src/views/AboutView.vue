@@ -51,10 +51,16 @@
 <style scoped>
 
 .container1 {
-  background-color: rgb(103, 27, 27);
+  background-color: rgb(0, 0, 0);
+  height: 570px;
+}
+
+.item1 {
+  background-color: rgb(0, 0, 0);
   position: relative;
   text-align: center;
   color: #e7e7e7;
+  height: 570px;
 }
 
 #collage-aboutpage {
@@ -82,27 +88,26 @@ h1 {
 
 
 .container2 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
 }
 .item2 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 280px;
   width: 80%;
   margin: auto;
   padding: 20px;
   padding-top: 30px;
-  margin-top: 50px;
   margin-bottom: 40px;
 
 }
 .item3 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 270px;
   width: 80%;
   margin: auto;
   padding: 20px;
   padding-top: 50px;
-  margin-bottom: 30px;
   
 }
 
@@ -120,6 +125,12 @@ p {
   text-align:justify;
 }
 
+
+.container3 {
+  background-color: #000000;
+  padding-bottom: 40px;
+}
+
 #kraftværket {
   width: 90%;
   margin: auto;
@@ -127,14 +138,13 @@ p {
 
 
 .container4 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 500px;
-  margin-top: 40px;
   padding-top: 40px;
 }
 
 .item4 {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   width: 45%;
   margin: auto;
   margin-top: 40px;
@@ -149,11 +159,12 @@ h3 {
   color: #e7e7e7;
   text-align: center;
   font-weight: bold;
-  letter-spacing: 15px;
+  letter-spacing: 20px;
+  font-size: 40px;
 }
 
 h4 {
-  font-size: 25px;
+  font-size: 23px;
   color: #e7e7e7;
   text-align: center;
 }
