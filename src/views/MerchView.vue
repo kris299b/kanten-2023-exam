@@ -40,7 +40,7 @@
     background-color: rgb(0, 0, 0);
     height: 200px;
     padding-top: 30px;
-    width: 70%;
+    width: 60%;
     margin: auto;
     text-align: center;
 }
@@ -56,6 +56,7 @@ h1 {
 #paragraf {
     font-size: 16px;
     color: #e7e7e7;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .boks2 {
