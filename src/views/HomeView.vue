@@ -14,28 +14,27 @@
     <img class="image" src="../assets/kanten-kollage-done.jpg" alt="">
   </div>
 
-  <!--Dette område er Mailchimp-signup-->
-  <div id="mc_embed_signup">
-    <form action="https://gmail.us21.list-manage.com/subscribe/post?u=4647b8b842810351f756a5c6d&amp;id=322f56a61f&amp;f_id=003354e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        <div id="mc_embed_signup_scroll">
-        
-        <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+
+<!--Dette område er Mailchimp-signup-->
+<div class="mailchimp-område">
+  <div class="tilmelding">TILMELD DIG VORES NYHEDSBREV</div>
+<div id="mc_embed_signup">
+<form action="https://gmail.us21.list-manage.com/subscribe/post?u=4647b8b842810351f756a5c6d&amp;id=322f56a61f&amp;f_id=003354e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <div class="indicates-required"><span class="asterisk">*</span> Påkrævet</div>
 <div class="mc-field-group">
-	<label for="mce-FNAME">First Name  <span class="asterisk">*</span>
-</label>
+	<label for="mce-FNAME">Fornavn<span class="asterisk">*</span>
+  </label>
 	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required>
-	<span id="mce-FNAME-HELPERTEXT" class="helper_text"></span>
 </div>
 <div class="mc-field-group">
-	<label for="mce-LNAME">Last Name </label>
+	<label for="mce-LNAME">Efternavn</label>
 	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
-	<span id="mce-LNAME-HELPERTEXT" class="helper_text"></span>
 </div>
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+	<label for="mce-EMAIL">Email adresse<span class="asterisk">*</span>
 </label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
-	<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
 </div>
 	<div id="mce-responses" class="clear foot">
 		<div class="response" id="mce-error-response" style="display:none"></div>
@@ -44,12 +43,13 @@
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4647b8b842810351f756a5c6d_322f56a61f" tabindex="-1" value=""></div>
         <div class="optionalParent">
             <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                <input type="submit" value="Tilmeld dig" name="subscribe" id="mc-embedded-subscribe" class="button">
                 <p class="brandingLogo"><a href="http://eepurl.com/irZaUM" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
             </div>
         </div>
     </div>
 </form>
+</div>
 </div>
 </template>
 
@@ -57,5 +57,62 @@
 </script>
 
 <style scoped>
+.mailchimp-område {
+  background-color: rgb(0, 0, 0);
+  height: 450px;
+}
 
+.tilmelding {
+  font-weight: 600;
+  font-size: 30px;
+  color: #e6e6e6;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+#mc_embed_signup {
+  background-color: black;
+  margin: auto;
+}
+
+.mc-field-group {
+  color: #e6e6e6;
+}
+
+.indicates-required {
+  color: #e94e00;
+}
+
+#mce-FNAME {
+  color: #e6e6e6;
+  border: #e6e6e6;
+  background-color: rgb(69, 69, 69);
+}
+
+#mce-LNAME {
+  color: #e6e6e6;
+  border: #e6e6e6;
+  background-color: rgb(69, 69, 69);
+}
+
+#mce-EMAIL {
+  color: #e6e6e6;
+  border: #e6e6e6;
+  background-color: rgb(69, 69, 69);
+}
+
+#mc-embedded-subscribe {
+  color: #e6e6e6;
+  background-color: black;
+  border:solid #e6e6e6;
+  font-weight: 600;
+  border-radius: 0%;
+}
+
+#mc-embedded-subscribe:hover {
+  color: black;
+  background-color: #fb923c;
+  border-color: #fb923c;
+}
 </style>
