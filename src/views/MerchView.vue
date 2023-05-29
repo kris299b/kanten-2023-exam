@@ -10,8 +10,17 @@
 <div class="boks2">
     <div class="inner-boks2">
         <img id="t-shirt" src="../assets/t-shirt.png" alt="">
+        <button class="button">SE T-SHIRTS</button>
+    </div>
+
+    <div class="inner-boks3">
         <img id="hoodie" src="../assets/hoodie-kopi.png" alt="">
+        <button class="button">SE HOODIES</button>
+    </div>
+
+    <div class="inner-boks4">
         <img id="sweatshirt" src="../assets/sweatshirt-kopi.png" alt="">
+        <button class="button">SE SWEATSHIRTS</button>
     </div>
 </div>
 </template>
@@ -51,40 +60,67 @@ h1 {
 
 .boks2 {
     background-color: rgb(0, 0, 0);
-    height: 450px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
 }
 
 .inner-boks2 {
     background-color: rgb(0, 0, 0);
     height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 33.3%;
+    margin: auto;
+    text-align: center;
 }
 
 #t-shirt{
     height: 90%;
-    margin-right: 40px;
+    margin: auto;
+}
+
+.inner-boks3 {
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+    width: 33.3%;
+    text-align: center;
 }
 
 #hoodie{
     height: 90%;
-    margin-right: 40px;
+    margin: auto;
+}
+
+.inner-boks4 {
+    background-color: rgb(0, 0, 0);
+    height: 400px;
+    width: 33.3%;
+    text-align: center;
 }
 
 #sweatshirt{
     height: 90%;
+    margin: auto;
 }
 
 
 .inner-boks3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 400px;
 }
 .button {
   background-color: rgb(0, 0, 0);
   color: #e6e6e6;
+  font-weight: 600;
   border: 2px solid #e6e6e6;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.button:hover {
+    background-color: #fb923c;
+    border-color: #fb923c;
+    color: black;
 }
 </style>
