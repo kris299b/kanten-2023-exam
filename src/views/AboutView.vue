@@ -194,7 +194,7 @@ h4 {
 }
 
 a:hover {
-  color: #9333ea;
+  color: #fb923c;
 }
 
 </style>
