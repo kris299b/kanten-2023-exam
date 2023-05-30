@@ -197,5 +197,19 @@ a:hover {
   color: #fb923c;
 }
 
+
+
+/*Media Query til alm. HTML/CSS*/ 
+@media (width < 640px) {
+
+}
+
+@media (min-width: 768px) {
+  
+}
+
+@media (min-width: 992px) {
+  
+}
 </style>
   
