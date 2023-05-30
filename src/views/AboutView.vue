@@ -49,7 +49,6 @@
 </template>
   
 <style scoped>
-
 .container1 {
   background-color: rgb(0, 0, 0);
   height: 570px;
@@ -84,6 +83,7 @@ h1 {
 #kanten {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
+  font-size: 16px;
 }
 
 
@@ -201,15 +201,325 @@ a:hover {
 
 /*Media Query til alm. HTML/CSS*/ 
 @media (width < 640px) {
+.container1 {
+  background-color: rgb(0, 0, 0);
+  height: 190px;
+}
+
+.item1 {
+  background-color: rgb(0, 0, 0);
+  height: 190px;
+}
+
+.centered {
+  top: 25%;
+  left: 20%;
+  transform: translate(-12%, -50%);
+}
+
+h1 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+#kanten {
+  font-size: 11px;
+}
+.container2 {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+}
+.item2 {
+  background-color: rgb(0, 0, 0);
+  height: 260px;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  padding-top: 30px;
+  margin-bottom: 40px;
 
 }
+.item3 {
+  background-color: rgb(0, 0, 0);
+  height: 215px;
+  width: 90%;
+  padding: 20px;
+  padding-top: 30px;
+  
+}
+
+h2 {
+  font-size: 16px;
+  padding-bottom: 0;
+}
+
+p {
+  font-size: 11px;
+}
+.container3 {
+  padding-bottom: 20px;
+}
+
+#kraftværket {
+  width: 90%;
+  margin: auto;
+}
+.container4 {
+  height: 400px;
+  padding-top: 40px;
+}
+
+.item4 {
+  width: 80%;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+
+h3 {
+  letter-spacing: 10px;
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 15px;
+}
+.item5 {
+  height: 150px;
+  width: 80%;
+}
+.inner-item1 {
+  width: 150px;
+  padding-left: 15px;
+}
+.inner-item2 {
+  width: 150px;
+  padding-left: 10px;
+}
+}
+
+
 
 @media (min-width: 768px) {
+  .container1 {
+  background-color: rgb(0, 0, 0);
+  height: 360px;
+}
+.item1 {
+  background-color: rgb(0, 0, 0);
+  height: 360px;
+}
+.centered {
+  top: 30%;
+  left: 20%;
+  transform: translate(-12%, -50%);
+}
+
+h1 {
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+.container2 {
+  margin: 0;
+}
+.item2 {
+  width: 90%;
+  padding: 20px;
+  padding-top: 10px;
+}
+.item3 {
+  width: 90%;
+  padding-top: 20px;
+}
+
+h2 {
+  font-size: 18px;
+  padding-bottom: 0;
+}
+
+p {
+  font-size: 16px;
+}
+
+#kraftværket {
+  width: 95%;
+}
+.container4 {
+  height: 360px;
+  padding-top: 40px;
+}
+
+.item4 {
+  width: 60%;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+
+h3 {
+  letter-spacing: 16px;
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.item5 {
+  width: 60%;
+  height: 130px;
+}
+}
+
+
+
+@media (min-width: 992px) {
+  .container1 {
+  background-color: rgb(0, 0, 0);
+  height: 570px;
+}
+
+.item1 {
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  text-align: center;
+  color: #e7e7e7;
+  height: 570px;
+}
+
+#collage-aboutpage {
+  opacity: 0.3;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+  padding-bottom: 20px;
+  letter-spacing: 8px;
+}
+
+#kanten {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+.container2 {
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+}
+.item2 {
+  background-color: rgb(0, 0, 0);
+  height: 280px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  padding-top: 30px;
+  margin-bottom: 40px;
+
+}
+.item3 {
+  background-color: rgb(0, 0, 0);
+  height: 270px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  padding-top: 50px;
   
 }
 
-@media (min-width: 992px) {
-  
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e7e7e7;
+  padding-bottom: 10px;
+}
+
+p {
+  color: #e7e7e7;
+  font-size: 16px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align:justify;
+}
+
+
+.container3 {
+  background-color: #000000;
+  padding-bottom: 40px;
+}
+
+#kraftværket {
+  width: 90%;
+  margin: auto;
+}
+
+
+.container4 {
+  background-color: rgb(0, 0, 0);
+  height: 500px;
+  padding-top: 40px;
+}
+
+.item4 {
+  background-color: rgb(0, 0, 0);
+  width: 45%;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: solid 2px;
+  border-left: solid 2px;
+  border-right: solid 2px;
+  color: #e7e7e7;
+}
+
+h3 {
+  color: #e7e7e7;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 20px;
+  font-size: 40px;
+}
+
+h4 {
+  font-size: 23px;
+  color: #e7e7e7;
+  text-align: center;
+}
+
+.item5 {
+  height: 180px;
+  width: 45%;
+  display: flex;
+  margin: auto;
+  border-bottom: solid 2px;
+  border-left: solid 2px;
+  border-right: solid 2px;
+  color: #e7e7e7;
+}
+
+.inner-item1 {
+  width: 150px;
+  height: 80px;
+  margin: auto;
+}
+
+
+.inner-item2 {
+  width: 150px;
+  height: 80px;
+  margin: auto;
+}
+
+a:hover {
+  color: #fb923c;
+}
+
 }
 </style>
   
