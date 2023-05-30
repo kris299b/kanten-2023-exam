@@ -87,19 +87,22 @@
 #mce-FNAME {
   color: #e6e6e6;
   border: #e6e6e6;
-  background-color: rgb(69, 69, 69);
+  background-color: #303030;
+  border-radius: 0%;
 }
 
 #mce-LNAME {
   color: #e6e6e6;
   border: #e6e6e6;
-  background-color: rgb(69, 69, 69);
+  background-color: #303030;
+  border-radius: 0%;
 }
 
 #mce-EMAIL {
   color: #e6e6e6;
   border: #e6e6e6;
-  background-color: rgb(69, 69, 69);
+  background-color: #303030;
+  border-radius: 0%;
 }
 
 #mc-embedded-subscribe {
