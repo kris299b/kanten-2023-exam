@@ -24,7 +24,7 @@
 
 
   <section class="bg-white dark:bg-black">
-  <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+  <div class="py-8 sm:py-20 lg:py-16 px-4 mx-auto max-w-screen-md">
       <h2 class="mb-4 text-base md:text-lg lg:text-3xl tracking-tight 0.1em; font-bold font-sans text-center text-gray-900 dark:text-white">VIL DU VÆRE MED PÅ HOLDET?</h2>
       <p class="mb-8 lg:mb-16 font-light font-serif text-center text-gray-500 dark:text-gray-400 text-sm md:text-base lg:text-base">Kunne du tænke dig at blive en del af holdet og indgå i et kæmpe fællesskab, hvor alle er velkommen og kan føle sig inkluderet? Så tøv endelig ikke med at udfylde formularen herunder. Vi glæder os til at høre fra dig.</p>
       <form action="#" class="space-y-8">
@@ -119,4 +119,133 @@ h2 {
   font-weight: 600;
 }
 
+
+/*Media Query til alm. HTML/CSS*/ 
+@media (width < 640px) {
+  .inner-box1 {
+  height: 200px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.centered {
+  top: 10%;
+  left: 30%;
+  transform: translate(-22%, -50%);
+}
+
+#spillestedet {
+  font-size: 11px;
+}
+
+.box2 {
+  height: 450px;
+  padding-top: 0px;
+}
+.inner-box2 {
+  width: 90%;
+  padding-top: 0;
+  margin-bottom: 30px;
+}
+.box3 {
+  width: 90%;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+p {
+  font-size: 11px;
+}
+
+h2 {
+  font-size: 16px;
+}
+}
+
+
+@media (min-width: 768px) {
+  .inner-box1 {
+  height: 300px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+.centered {
+  top: 25%;
+  left: 30%;
+  transform: translate(-22%, -50%);
+}
+
+#spillestedet {
+  font-size: 16px;
+}
+
+.box2 {
+  height: 500px;
+  padding-top: 0px;
+}
+.inner-box2 {
+  width: 80%;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+.box3 {
+  width: 80%;
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 18px;
+}
+}
+
+
+
+@media (min-width: 992px) {
+.inner-box1 {
+  height: 420px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+.box2 {
+  height: 520px;
+  padding-top: 40px;
+}
+.inner-box2 {
+  width: 80%;
+  padding-top: 0;
+  margin-bottom: 40px;
+}
+.box3 {
+  width: 80%;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 22px;
+}
+}
 </style>
