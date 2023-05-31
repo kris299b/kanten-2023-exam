@@ -3,7 +3,8 @@
       <div class="item1">
         <img id="collage-aboutpage" src="../assets/collage-for-aboutpage.png" alt="">
         <div class="centered">
-          <h1>HVEM ER VI?</h1>
+          <h1>KANTEN</h1>
+          <h1 id="unge">- En ungdomsforening drevet af unge</h1>
           <p id="kanten">Kanten bliver Esbjergs nye kulturfællesskab, drevet af Foreningen Kanten. Vores vision er at skabe en platform for det kreative vækstlag, som mangler en synlig plads i Esbjergs kulturliv. Gennem denne platform ønsker vi at støtte de fællesskaber der opstår af spirende kreative miljøer. Kanten vil give det underrepræsenterede vækstlag en scene at stå på - dette gør vi gennem en bred vifte af projekter der bl.a. indeholder events, klubaftener, øvelokaler og et lydstudie. </p>
         </div>
       </div>
@@ -69,8 +70,8 @@
 .centered {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 20%;
+  transform: translate(-10%, -50%);
 }
 
 h1 {
@@ -78,6 +79,13 @@ h1 {
   font-weight: 600;
   padding-bottom: 20px;
   letter-spacing: 8px;
+}
+
+#unge {
+  font-size: 20px;
+  letter-spacing: 0px;
+  padding-bottom: 40px;
+  font-style: italic;
 }
 
 #kanten {
@@ -115,7 +123,7 @@ h2 {
   font-size: 22px;
   font-weight: bold;
   color: #e7e7e7;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 p {
@@ -316,7 +324,7 @@ h4 {
 
 h1 {
   font-size: 35px;
-  padding-bottom: 10px;
+  padding-bottom: 0;
 }
 .container2 {
   margin: 0;
@@ -392,14 +400,14 @@ h4 {
 .centered {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 20%;
+  transform: translate(-10%, -50%);
 }
 
 h1 {
   font-size: 45px;
   font-weight: 600;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
   letter-spacing: 8px;
 }
 
