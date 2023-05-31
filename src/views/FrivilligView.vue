@@ -3,7 +3,7 @@
     <div class="inner-box1">
       <img id="community" src="../assets/community.jpg" alt="">
       <div class="centered">
-        <h1>BLIV EN DEL AF KANTEN</h1>
+        <h1>FRIVILLIGT ARBEJDE HOS KANTEN</h1>
         <p id="spillestedet">Spillestedet Kanten er drevet af Foreningen Kanten, som er et fællesskab af unge esbjergensere og tilflyttere, der med åbningen af Kanten vil skabe en frivilligt drevet foreningen med mulighed for medlemskab. Alle typer er velkommen og vi ønsker gennem musik og kunst-events at løfte det kulturelle liv i Esbjerg.</p>
       </div>
     </div>
@@ -228,8 +228,8 @@ h1 {
 .centered {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 30%;
+  transform: translate(-21%, -50%);
 }
 
 .box2 {

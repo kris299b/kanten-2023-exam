@@ -400,7 +400,7 @@ h4 {
 .centered {
   position: absolute;
   top: 50%;
-  left: 20%;
+  left: 18%;
   transform: translate(-10%, -50%);
 }
 
