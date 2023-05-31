@@ -117,4 +117,90 @@
   background-color: #fb923c;
   border-color: #fb923c;
 }
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+.mailchimp-område {
+  background-color: rgb(0, 0, 0);
+  height: 450px;
+}
+
+.tilmelding {
+  font-size: 14px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+#mc_embed_signup {
+  background-color: black;
+  margin: auto;
+}
+
+.mc-field-group {
+  color: #e6e6e6;
+}
+
+.indicates-required {
+  color: #e94e00;
+}
+
+#mce-FNAME {
+  color: #e6e6e6;
+  border: #e6e6e6;
+  background-color: #303030;
+  border-radius: 0%;
+}
+
+#mce-LNAME {
+  color: #e6e6e6;
+  border: #e6e6e6;
+  background-color: #303030;
+  border-radius: 0%;
+}
+
+#mce-EMAIL {
+  color: #e6e6e6;
+  border: #e6e6e6;
+  background-color: #303030;
+  border-radius: 0%;
+}
+
+#mc-embedded-subscribe {
+  color: #e6e6e6;
+  background-color: black;
+  border:solid #e6e6e6;
+  font-weight: 600;
+  border-radius: 0%;
+}
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
 </style>

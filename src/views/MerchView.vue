@@ -129,8 +129,7 @@ h1 {
 
 
 
-/*Media Query til alm. HTML/CSS*/ 
-@media (width < 640px) {
+/* @media (width < 640px) {
     .boks1 {
         background-color: rgb(0, 0, 0);
         height: 220px;
@@ -336,5 +335,40 @@ h1 {
     border-color: #fb923c;
     color: black;
 }
+} */
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  
 }
 </style>
