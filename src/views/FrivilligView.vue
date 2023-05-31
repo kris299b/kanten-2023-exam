@@ -57,7 +57,7 @@
 }
 
 .inner-box1 {
-  height: 420px;
+  height: auto;
   position: relative;
   text-align: center;
   color: white;
@@ -83,6 +83,7 @@ h1 {
 }
 
 #spillestedet {
+  font-size: 16px;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -121,10 +122,107 @@ h2 {
 }
 
 
-/*Media Query til alm. HTML/CSS*/ 
-@media (width < 640px) {
-  .inner-box1 {
-  height: 200px;
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+.inner-box1 {
+  height: auto;
+}
+.centered {
+  top: 20%;
+  left: 20%;
+  transform: translate(-12%, -50%);
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+#spillestedet {
+  font-size: 13px;
+}
+.box2 {
+  padding-top: 15px;
+}
+.inner-box2 {
+  width: 90%;
+  padding-top: 0;
+  margin-bottom: 40px;
+}
+.box3 {
+  width: 90%;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+p {
+  font-size: 12px;
+}
+
+h2 {
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+.inner-box1 {
+  height: auto;
+}
+
+.centered {
+  top: 30%;
+  left: 25%;
+  transform: translate(-17%, -50%);
+}
+
+h1 {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+#spillestedet {
+  font-size: 14px;
+}
+
+.box2 {
+  height: 650px;
+  padding-top: 25px;
+}
+.inner-box2 {
+  width: 90%;
+  padding-top: 0;
+  margin-bottom: 40px;
+}
+.box3 {
+  width: 90%;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+p {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 19px;
+  padding-bottom: 5px;
+}
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+.inner-box1 {
+  background-color: aqua;
+  height: auto;
   width: 100%;
 }
 
@@ -134,18 +232,18 @@ h1 {
   padding-bottom: 20px;
 }
 .centered {
-  top: 10%;
+  top: 25%;
   left: 30%;
   transform: translate(-22%, -50%);
 }
 
 #spillestedet {
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .box2 {
-  height: 450px;
-  padding-top: 0px;
+  height: 480px;
+  padding-top: 20px;
 }
 .inner-box2 {
   width: 90%;
@@ -159,16 +257,117 @@ h1 {
 }
 
 p {
-  font-size: 11px;
+  font-size: 15px;
 }
 
 h2 {
+  font-size: 20px;
+}
+}
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.inner-box1 {
+  height: auto;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+#spillestedet {
+  font-size: 18px;
+}
+
+#community {
+  opacity: 0.3;
+  max-width: 100%;
+}
+
+.centered {
+  top: 50%;
+  left: 30%;
+  transform: translate(-21%, -50%);
+}
+
+.box2 {
+  height: 520px;
+  padding-top: 40px;
+}
+.inner-box2 {
+  width: 80%;
+  padding-top: 0;
+  margin-bottom: 40px;
+}
+.box3 {
+  width: 80%;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+p {
   font-size: 16px;
 }
+
+h2 {
+  font-size: 22px;
+}
 }
 
 
-@media (min-width: 768px) {
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.inner-box1 {
+  height: auto;
+}
+
+.centered {
+  top: 50%;
+  left: 30%;
+  transform: translate(-21%, -50%);
+}
+
+h1 {
+  font-size: 45px;
+  padding-bottom: 20px;
+}
+
+#spillestedet {
+  font-size: 18px;
+}
+
+.box2 {
+  height: 520px;
+  padding-top: 40px;
+}
+.inner-box2 {
+  width: 80%;
+  padding-top: 0;
+  margin-bottom: 40px;
+}
+.box3 {
+  width: 80%;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 22px;
+}
+}
+
+
+
+
+/*
+@media (width < 768px) {
   .inner-box1 {
   height: 300px;
   width: 100%;
@@ -261,4 +460,5 @@ h2 {
   font-size: 22px;
 }
 }
+*/
 </style>
