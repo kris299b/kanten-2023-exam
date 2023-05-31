@@ -349,6 +349,25 @@ a:hover {
     transform: translate(-12%, -50%);
   }
 
+  h1 {
+    font-size: 45px;
+  }
+
+  #unge {
+    font-size: 20px;
+  }
+
+  #kanten {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
   .item4 {
     width: 50%;
     margin-top: 40px;

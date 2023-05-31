@@ -124,53 +124,6 @@ h2 {
 
 
 
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
-.inner-box1 {
-  height: auto;
-}
-.centered {
-  top: 6%;
-  left: 20%;
-  transform: translate(-12%, -50%);
-}
-
-h1 {
-  font-size: 15px;
-  font-weight: 700;
-  padding-bottom: 5px;
-}
-
-#spillestedet {
-  font-size: 12px;
-}
-.box2 {
-  height: 650px;
-  padding-top: 15px;
-}
-.inner-box2 {
-  width: 90%;
-  padding-top: 0;
-  margin-bottom: 40px;
-}
-.box3 {
-  width: 90%;
-  margin-top: 40px;
-  padding-top: 20px;
-}
-
-p {
-  font-size: 12px;
-}
-
-h2 {
-  font-size: 14px;
-  padding-bottom: 4px;
-}
-}
-
-
-
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
 .inner-box1 {
