@@ -81,6 +81,7 @@
 
 .indicates-required {
   color: #e94e00;
+  font-size: 16px;
 }
 
 #mce-FNAME {
@@ -123,92 +124,93 @@
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
-.mailchimp-område {
-  background-color: rgb(0, 0, 0);
-  height: 350px;
-}
+  .mailchimp-område {
+    background-color: rgb(0, 0, 0);
+    height: 350px;
+  }
+  .tilmelding {
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
 
-.tilmelding {
-  font-size: 14px;
-  padding-bottom: 10px;
-  padding-top: 15px;
-}
+  #mc_embed_signup {
+    width: 90%;
+  }
 
-#mc_embed_signup {
-  width: 100%;
-}
+  .mc-field-group {
+    font-size: 12px;
+    padding-top: 15px;
+  }
 
-.mc-field-group {
-  font-size: 12px;
-}
-
-#mce-FNAME {
-  font-size: 12px;
-}
-
-#mc-embedded-subscribe {
-  font-size: 12px;
-}
+  #mc-embedded-subscribe {
+    font-size: 12px;
+    margin-top: 10px;
+  }
 }
 
 
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-.mailchimp-område {
-  height: 450px;
-}
+  .mailchimp-område {
+    height: 480px;
+  }
 
-.tilmelding {
-  font-size: 18px;
-  padding-bottom: 20px;
-  padding-top: 40px;
-}
+  .tilmelding {
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
 
-#mc_embed_signup {
-  background-color: rgb(0, 0, 0);
-  width: 100%;
-  margin: auto;
-}
-.mc-field-group {
-  color: #e6e6e6;
-  font-size: 13px;
-}
+  #mc_embed_signup {
+    background-color: rgb(0, 0, 0);
+    width: 70%;
+    margin: auto;
+  }
+  .mc-field-group {
+    color: #e6e6e6;
+    font-size: 13px;
+    padding-top: 15px;
+  }
 
-#mc-embedded-subscribe {
-  font-size: 15px;
-}
+  #mc-embedded-subscribe {
+    font-size: 15px;
+    margin-top: 10px;
+  }
 }
 
 
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-.mailchimp-område {
-  height: 450px;
-}
+  .mailchimp-område {
+    height: 450px;
+  }
 
-.tilmelding {
-  font-size: 20px;
-  padding-bottom: 0;
-  padding-top: 40px;
-}
+  .tilmelding {
+    font-size: 20px;
+    padding-bottom: 0;
+    padding-top: 40px;
+  }
 
-#mc_embed_signup {
-  background-color: rgb(161, 0, 0);
-  width: 100%;
-  margin: auto;
-  font-size: 16px;
-}
+  #mc_embed_signup {
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+  }
 
-.mc-field-group {
-  color: #e6e6e6;
-  font-size: 16px;
-}
+  .mc-field-group {
+    color: #e6e6e6;
+    font-size: 16px;
+    padding-top: 10px;
+  }
 
-#mc-embedded-subscribe {
-  font-size: 15px;
-}
+  #mc-embedded-subscribe {
+    font-size: 16px;
+    margin-top: 10px;
+  }
 }
 
 
@@ -216,13 +218,67 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+  .mailchimp-område {
+    height: 500px;
+  }
 
+  .tilmelding {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  #mc_embed_signup {
+    background-color: rgb(0, 0, 0);
+    width: 40%;
+    margin: auto;
+    font-size: 16px;
+  }
+
+  .mc-field-group {
+    color: #e6e6e6;
+    font-size: 16px;
+  }
+
+  .indicates-required {
+    color: #e94e00;
+    font-size: 16px;
+  }
+
+  #mc-embedded-subscribe {
+    font-size: 16px;
+  }
 }
 
 
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+  .mailchimp-område {
+    height: 600px;
+  }
 
+  .tilmelding {
+    font-size: 35px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+
+  #mc_embed_signup {
+    width: 40%;
+    font-size: 16px;
+  }
+
+  .mc-field-group {
+    font-size: 16px;
+  }
+
+  .indicates-required {
+    font-size: 20px;
+  }
+
+  #mc-embedded-subscribe {
+    font-size: 15px;
+  }
 }
 </style>
