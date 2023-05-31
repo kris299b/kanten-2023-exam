@@ -65,6 +65,7 @@
 
 #community {
   opacity: 0.3;
+  max-width: 100%;
 }
 
 .centered {
@@ -217,6 +218,11 @@ h2 {
 @media (min-width: 992px) {
 .inner-box1 {
   height: 420px;
+}
+
+#community {
+  opacity: 0.3;
+  max-width: 100%;
 }
 
 h1 {
