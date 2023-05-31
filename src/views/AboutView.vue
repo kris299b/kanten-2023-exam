@@ -116,7 +116,6 @@ h1 {
   margin: auto;
   padding: 20px;
   padding-top: 50px;
-  
 }
 
 h2 {
@@ -153,7 +152,7 @@ p {
 
 .item4 {
   background-color: rgb(0, 0, 0);
-  width: 45%;
+  width: 50%;
   margin: auto;
   margin-top: 40px;
   padding-top: 20px;
@@ -179,7 +178,7 @@ h4 {
 
 .item5 {
   height: 180px;
-  width: 45%;
+  width: 50%;
   display: flex;
   margin: auto;
   border-bottom: solid 2px;
@@ -189,330 +188,8 @@ h4 {
 }
 
 .inner-item1 {
-  width: 150px;
-  height: 80px;
-  margin: auto;
-}
-
-
-.inner-item2 {
-  width: 150px;
-  height: 80px;
-  margin: auto;
-}
-
-a:hover {
-  color: #fb923c;
-}
-
-
-
-/* Media Query til alm. HTML/CSS 
-@media (width < 640px) {
-.container1 {
-  background-color: rgb(0, 0, 0);
-  height: 190px;
-}
-
-.item1 {
-  background-color: rgb(0, 0, 0);
-  height: 190px;
-}
-
-.centered {
-  top: 25%;
-  left: 20%;
-  transform: translate(-12%, -50%);
-}
-
-h1 {
-  font-size: 22px;
-  padding-bottom: 10px;
-}
-
-#kanten {
-  font-size: 11px;
-}
-.container2 {
-  background-color: rgb(0, 0, 0);
-  margin: 0;
-}
-.item2 {
-  background-color: rgb(0, 0, 0);
-  height: 260px;
-  width: 90%;
-  margin: auto;
-  padding: 20px;
-  padding-top: 30px;
-  margin-bottom: 40px;
-
-}
-.item3 {
-  background-color: rgb(0, 0, 0);
-  height: 215px;
-  width: 90%;
-  padding: 20px;
-  padding-top: 30px;
-  
-}
-
-h2 {
-  font-size: 16px;
-  padding-bottom: 0;
-}
-
-p {
-  font-size: 11px;
-}
-.container3 {
-  padding-bottom: 20px;
-}
-
-#kraftværket {
-  width: 90%;
-  margin: auto;
-}
-.container4 {
-  height: 400px;
-  padding-top: 40px;
-}
-
-.item4 {
-  width: 80%;
-  margin-top: 20px;
-  padding-top: 15px;
-}
-
-h3 {
-  letter-spacing: 10px;
-  font-size: 22px;
-}
-
-h4 {
-  font-size: 15px;
-}
-.item5 {
-  height: 150px;
-  width: 80%;
-}
-.inner-item1 {
-  width: 150px;
-  padding-left: 15px;
-}
-.inner-item2 {
-  width: 150px;
-  padding-left: 10px;
-}
-}
-
-
-
-@media (min-width: 768px) {
-  .container1 {
-  background-color: rgb(0, 0, 0);
-  height: 360px;
-}
-.item1 {
-  background-color: rgb(0, 0, 0);
-  height: 360px;
-}
-.centered {
-  top: 30%;
-  left: 20%;
-  transform: translate(-12%, -50%);
-}
-
-h1 {
-  font-size: 35px;
-  padding-bottom: 0;
-}
-.container2 {
-  margin: 0;
-}
-.item2 {
-  width: 90%;
-  padding: 20px;
-  padding-top: 10px;
-}
-.item3 {
-  width: 90%;
-  padding-top: 20px;
-}
-
-h2 {
-  font-size: 18px;
-  padding-bottom: 0;
-}
-
-p {
-  font-size: 16px;
-}
-
-#kraftværket {
-  width: 95%;
-}
-.container4 {
-  height: 360px;
-  padding-top: 40px;
-}
-
-.item4 {
-  width: 60%;
-  margin-top: 30px;
-  padding-top: 15px;
-}
-
-h3 {
-  letter-spacing: 16px;
-  font-size: 30px;
-}
-
-h4 {
-  font-size: 18px;
-}
-
-.item5 {
-  width: 60%;
-  height: 130px;
-}
-}
-
-
-
-@media (min-width: 992px) {
-  .container1 {
-  background-color: rgb(0, 0, 0);
-  height: 570px;
-}
-
-.item1 {
-  background-color: rgb(0, 0, 0);
-  position: relative;
-  text-align: center;
-  color: #e7e7e7;
-  height: 570px;
-}
-
-#collage-aboutpage {
-  opacity: 0.3;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 18%;
-  transform: translate(-10%, -50%);
-}
-
-h1 {
-  font-size: 45px;
-  font-weight: 600;
-  padding-bottom: 0px;
-  letter-spacing: 8px;
-}
-
-#kanten {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align: center;
-  font-size: 16px;
-}
-
-
-.container2 {
-  background-color: rgb(0, 0, 0);
-  margin: 0;
-}
-.item2 {
-  background-color: rgb(0, 0, 0);
-  height: 280px;
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-  padding-top: 30px;
-  margin-bottom: 40px;
-
-}
-.item3 {
-  background-color: rgb(0, 0, 0);
-  height: 270px;
-  width: 80%;
-  margin: auto;
-  padding: 20px;
-  padding-top: 50px;
-  
-}
-
-h2 {
-  font-size: 22px;
-  font-weight: bold;
-  color: #e7e7e7;
-  padding-bottom: 10px;
-}
-
-p {
-  color: #e7e7e7;
-  font-size: 16px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-align:justify;
-}
-
-
-.container3 {
   background-color: #000000;
-  padding-bottom: 40px;
-}
-
-#kraftværket {
-  width: 90%;
-  margin: auto;
-}
-
-
-.container4 {
-  background-color: rgb(0, 0, 0);
-  height: 500px;
-  padding-top: 40px;
-}
-
-.item4 {
-  background-color: rgb(0, 0, 0);
-  width: 45%;
-  margin: auto;
-  margin-top: 40px;
-  padding-top: 20px;
-  border-top: solid 2px;
-  border-left: solid 2px;
-  border-right: solid 2px;
-  color: #e7e7e7;
-}
-
-h3 {
-  color: #e7e7e7;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 20px;
-  font-size: 40px;
-}
-
-h4 {
-  font-size: 23px;
-  color: #e7e7e7;
-  text-align: center;
-}
-
-.item5 {
-  height: 180px;
-  width: 45%;
-  display: flex;
-  margin: auto;
-  border-bottom: solid 2px;
-  border-left: solid 2px;
-  border-right: solid 2px;
-  color: #e7e7e7;
-}
-
-.inner-item1 {
-  width: 150px;
+  width: 190px;
   height: 80px;
   margin: auto;
 }
@@ -526,26 +203,134 @@ h4 {
 
 a:hover {
   color: #fb923c;
-}
-} */
-
-
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
-
 }
 
 
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
+  .container1 {
+    height: auto;
+  }
+  .item1 {
+    height: auto;
+  }
 
+  .centered {
+    top: 20%;
+    left: 15%;
+    transform: translate(-8%, -50%);
+  }
+
+  h1 {
+    font-size: 25px;
+    font-weight: 700;
+    padding-bottom: 5px;
+  }
+
+  #unge {
+    font-size: 17px;
+    padding-bottom: 12px;
+  }
+
+  #kanten {
+    font-size: 14px;
+  }
+  .item2 {
+    height: 320px;
+    width: 95%;
+    padding: 5px;
+    padding-top: 30px;
+    margin-bottom: 5px;
+  }
+  .item3 {
+    height: 250px;
+    width: 95%;
+    padding: 5px;
+    padding-top: 20px;
+  }
+
+  h2 {
+    font-size: 17px;
+    padding-bottom: 4px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  #kraftværket {
+    width: 95%;
+  }
+
+  .container4 {
+    height: 400px;
+    padding-top: 40px;
+  }
+
+  .item4 {
+    width: 90%;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding-left: 17px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .item5 {
+    height: 150px;
+    width: 90%;
+    display: flex;
+  }
+
+  .inner-item1 {
+    width: 190px;
+    height: 80px;
+    margin: auto;
+  }
+
+
+  .inner-item2 {
+    width: 150px;
+    height: 80px;
+    margin: auto;
+  }
 }
 
 
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
+  .container1 {
+    height: auto;
+  }
+
+  .centered {
+    top: 50%;
+    left: 17%;
+    transform: translate(-10%, -50%);
+  }
+  .item1 {
+    height: auto;
+  }
+  .item2 {
+    height: 260px;
+  }
+  .item3 {
+    height: 240px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
 
 }
 
@@ -553,14 +338,146 @@ a:hover {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
+  .container1 {
+    height: auto;
+  }
+  .item1 {
+    height: auto;
+  }
+  
+  .centered {
+    transform: translate(-12%, -50%);
+  }
 
+  .item4 {
+    width: 50%;
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 23px;
+  }
+
+  .item5 {
+    height: 180px;
+    width: 50%;
+  }
+  .inner-item1 {
+    width: 150px;
+    height: 80px;
+  }
+  .inner-item2 {
+    width: 150px;
+    height: 80px;
+  }
 }
 
 
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+  .container1 {
+    height: auto;
+  }
+  .item1 {
+    height: auto;
+  }
   
+  .centered {
+    top: 50%;
+    left: 20%;
+    transform: translate(-10%, -50%);
+  }
+
+  h1 {
+    font-size: 45px;
+    padding-bottom: 20px;
+    letter-spacing: 8px;
+  }
+
+  #unge {
+    font-size: 20px;
+    letter-spacing: 0px;
+    padding-bottom: 40px;
+  }
+
+  #kanten {
+    font-size: 16px;
+  }
+  .container2 {
+    margin: 0;
+  }
+  .item2 {
+    height: 280px;
+    width: 80%;
+    padding: 20px;
+    padding-top: 30px;
+    margin-bottom: 40px;
+  }
+  .item3 {
+    height: 270px;
+    width: 80%;
+    padding: 20px;
+    padding-top: 50px;
+  }
+
+  h2 {
+    font-size: 22px;
+    padding-bottom: 0px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+  .container3 {
+    padding-bottom: 40px;
+  }
+  .container4 {
+    height: 500px;
+    padding-top: 40px;
+  }
+
+  .item4 {
+    width: 50%;
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+
+  h3 {
+    letter-spacing: 20px;
+    font-size: 40px;
+  }
+
+  h4 {
+    font-size: 23px;
+  }
+
+  .item5 {
+    height: 180px;
+    width: 50%;
+    display: flex;
+    margin: auto;
+  }
+
+  .inner-item1 {
+    background-color: #000000;
+    width: 190px;
+    height: 80px;
+    margin: auto;
+  }
+
+
+  .inner-item2 {
+    width: 150px;
+    height: 80px;
+    margin: auto;
+    padding: 0;
+  }
 }
 </style>
   
