@@ -130,21 +130,22 @@ h2 {
   height: auto;
 }
 .centered {
-  top: 20%;
+  top: 6%;
   left: 20%;
   transform: translate(-12%, -50%);
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   padding-bottom: 5px;
 }
 
 #spillestedet {
-  font-size: 13px;
+  font-size: 12px;
 }
 .box2 {
+  height: 650px;
   padding-top: 15px;
 }
 .inner-box2 {
@@ -163,8 +164,8 @@ p {
 }
 
 h2 {
-  font-size: 15px;
-  padding-bottom: 5px;
+  font-size: 14px;
+  padding-bottom: 4px;
 }
 }
 
@@ -221,7 +222,6 @@ h2 {
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
 .inner-box1 {
-  background-color: aqua;
   height: auto;
   width: 100%;
 }
