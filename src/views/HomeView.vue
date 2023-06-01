@@ -19,35 +19,271 @@
     <img class="image" src="../assets/kanten.jpg" alt="">
   </div>
 
-  <section class="dark:bg-black">
-  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-      <div class="mx-auto max-w-screen-md sm:text-center">
-          <p class="mb-4 font-normal text-md text-center text-lg md:text-2xl lg:text-3xl text-white tracking-widest">NYHEDSBREV</p>
-          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 text-sm md:text-lg lg:text-xl dark:text-gray-400">Tilmeld dig vores nyhedsbrev med din email, og hold dig opdateret på vores events, og fede arrangementer. </p>
-          <form action="#">
-              <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
-                  <div class="relative w-full">
-                      <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Email</label>
-                      <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-                          <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                      </div>
-                      <input class="block p-3 pl-10 w-full text-sm text-black bg-white border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Skriv din email" type="email" id="email" required="">
-                  </div>
-                  <div>
-                      <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white border cursor-pointer bg-primary-700 border-primary-600 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Tilmeld</button>
-                  </div>
-              </div>
-              <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">Vi beskytter din data. <a href="#" class="font-medium text-primary-600 dark:text-primary-500 hover:underline">Læs vores Privacy Policy</a>.</div>
-          </form>
-      </div>
-  </div>
-</section>
+
+<!--Dette område er Mailchimp-signup-->
+<div class="mailchimp-område">
+  <div class="tilmelding">TILMELD DIG VORES NYHEDSBREV</div>
+<div id="mc_embed_signup">
+<form action="https://gmail.us21.list-manage.com/subscribe/post?u=4647b8b842810351f756a5c6d&amp;id=322f56a61f&amp;f_id=003354e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+    <div class="indicates-required"><span class="asterisk">*</span> Påkrævet</div>
+<div class="mc-field-group">
+	<label for="mce-FNAME">Fornavn<span class="asterisk">*</span>
+  </label>
+	<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" required>
+</div>
+<div class="mc-field-group">
+	<label for="mce-LNAME">Efternavn</label>
+	<input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email adresse<span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4647b8b842810351f756a5c6d_322f56a61f" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Tilmeld dig" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+</div>
 </template>
 
 <script setup>
-
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+.mailchimp-område {
+  background-color: rgb(0, 0, 0);
+  height: 450px;
+}
 
+.tilmelding {
+  font-weight: 600;
+  font-size: 30px;
+  color: #e6e6e6;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+#mc_embed_signup {
+  background-color: black;
+  margin: auto;
+}
+
+.mc-field-group {
+  color: #e6e6e6;
+}
+
+.indicates-required {
+  color: #e94e00;
+  font-size: 16px;
+}
+
+#mce-FNAME {
+  color: #e6e6e6;
+  border: #e6e6e6;
+  background-color: #303030;
+  border-radius: 0%;
+}
+
+#mce-LNAME {
+  color: #e6e6e6;
+  border: #e6e6e6;
+  background-color: #303030;
+  border-radius: 0%;
+}
+
+#mce-EMAIL {
+  color: #e6e6e6;
+  border: #e6e6e6;
+  background-color: #303030;
+  border-radius: 0%;
+}
+
+#mc-embedded-subscribe {
+  color: #e6e6e6;
+  background-color: black;
+  border:solid #e6e6e6;
+  font-weight: 600;
+  border-radius: 0%;
+}
+
+#mc-embedded-subscribe:hover {
+  color: black;
+  background-color: #fb923c;
+  border-color: #fb923c;
+}
+
+
+
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+  .mailchimp-område {
+    background-color: rgb(0, 0, 0);
+    height: 350px;
+  }
+  .tilmelding {
+    font-size: 14px;
+    padding-bottom: 10px;
+    padding-top: 15px;
+  }
+
+  #mc_embed_signup {
+    width: 90%;
+  }
+
+  .mc-field-group {
+    font-size: 12px;
+    padding-top: 15px;
+  }
+
+  #mc-embedded-subscribe {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  .mailchimp-område {
+    height: 480px;
+  }
+
+  .tilmelding {
+    font-size: 18px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  #mc_embed_signup {
+    background-color: rgb(0, 0, 0);
+    width: 70%;
+    margin: auto;
+  }
+  .mc-field-group {
+    color: #e6e6e6;
+    font-size: 13px;
+    padding-top: 15px;
+  }
+
+  #mc-embedded-subscribe {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+}
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .mailchimp-område {
+    height: 450px;
+  }
+
+  .tilmelding {
+    font-size: 20px;
+    padding-bottom: 0;
+    padding-top: 40px;
+  }
+
+  #mc_embed_signup {
+    background-color: rgb(0, 0, 0);
+    width: 50%;
+    margin: auto;
+    font-size: 16px;
+  }
+
+  .mc-field-group {
+    color: #e6e6e6;
+    font-size: 16px;
+    padding-top: 10px;
+  }
+
+  #mc-embedded-subscribe {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .mailchimp-område {
+    height: 500px;
+  }
+
+  .tilmelding {
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 40px;
+  }
+
+  #mc_embed_signup {
+    background-color: rgb(0, 0, 0);
+    width: 40%;
+    margin: auto;
+    font-size: 16px;
+  }
+
+  .mc-field-group {
+    color: #e6e6e6;
+    font-size: 16px;
+  }
+
+  .indicates-required {
+    color: #e94e00;
+    font-size: 16px;
+  }
+
+  #mc-embedded-subscribe {
+    font-size: 16px;
+  }
+}
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .mailchimp-område {
+    height: 600px;
+  }
+
+  .tilmelding {
+    font-size: 35px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+  }
+
+  #mc_embed_signup {
+    width: 40%;
+    font-size: 16px;
+  }
+
+  .mc-field-group {
+    font-size: 16px;
+  }
+
+  .indicates-required {
+    font-size: 20px;
+  }
+
+  #mc-embedded-subscribe {
+    font-size: 15px;
+  }
+}
 </style>
