@@ -5,38 +5,36 @@
           <!--tilføj mere tekst til input-->
           <input type="text" id="default-search" class="sm:w-3/6 md:w-1/2 lg:w-1/2 p-4 h-5 md:h-10 lg:h-10 text-sm text-black border border-white bg-white focus:ring-blue-500 focus:border-blue-500 bg-white border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add a title" required v-model="newTodoContent">
           <input type="text" id="default-search" class="sm:w-3/6 md:w-1/2 lg:w-1/2 p-4 h-5 md:h-10 lg:h-10 text-sm text-black border border-white bg-white focus:ring-blue-500 focus:border-blue-500 bg-white border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add a date" required v-model="newTodoTitle">
-          <input type="text" id="default-search" class="sm:w-3/6 md:w-1/2 lg:w-1/2 p-4 h-5 md:h-10 lg:h-10 text-sm text-black border border-white bg-white focus:ring-blue-500 focus:border-blue-500 bg-white border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add a description" required v-model="newTodoDescription">
           <input type="text" id="default-search" class="sm:w-3/6 md:w-1/2 lg:w-1/2 p-4 h-5 md:h-10 lg:h-10 text-sm text-black border border-white bg-white focus:ring-blue-500 focus:border-blue-500 bg-white border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add an artist" required v-model="newTodoArtist">
           <input type="text" id="default-search" class="sm:w-3/6 md:w-1/2 lg:w-1/2 p-4 h-5 md:h-10 lg:h-10 text-sm text-black border border-white bg-white focus:ring-blue-500 focus:border-blue-500 bg-white border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add an venue" required v-model="newTodoVenue">
+          <input type="text" id="default-search" class="sm:w-3/6 md:w-1/2 lg:w-1/2 p-4 h-5 md:h-10 lg:h-10 text-sm text-black border border-white bg-white focus:ring-blue-500 focus:border-blue-500 bg-white border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add an pris" required v-model="newTodoPrice">
+          <input type="text" id="default-search" class="sm:w-3/6 md:w-1/2 lg:w-1/2 p-4 h-5 md:h-10 lg:h-10 text-sm text-black border border-white bg-white focus:ring-blue-500 focus:border-blue-500 bg-white border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add a description" required v-model="newTodoDescription">
           <input type="text" id="default-search" class="sm:w-3/6 md:w-1/2 lg:w-1/2 p-4 h-5 md:h-10 lg:h-10 text-sm text-black border border-white bg-white focus:ring-blue-500 focus:border-blue-500 bg-white border-white dark:placeholder-gray-400 dark:text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Add an image" required v-model="newTodoImage">
-          <input type="file" label="File input" @change="uploadImg">
+          <input type="file" label="File input" class="" @change="uploadImg">
           <br>
-          <button @click.prevent="firebaseAddSingleItem()" :disabled="uploadBtnDisabled">Add item</button>
-          <div class="py-3 md:py-6 ">
+          <button class="text-white" @click.prevent="firebaseAddSingleItem()" :disabled="uploadBtnDisabled"></button>
+          <div class="py-2 md:py-2 lg:py-2 ">
             <button class="bg-black border border-white hover:bg-black text-white font-normal py-2 px-4">
               Gem ændringer
             </button>
           </div>
         </div>
     </form>
-      <div class="dark:bg-black flex flex-row md:flex-col lg:flex-col place-items-center grid md:grid-cols-2 lg:grid-cols-2 py-5 flex justify-center p-10">
-        <div v-for="todo in todos" :key="todo">
-          <div class="text-center max-w-xxl bg-black border border-white">
+      <div class="dark:bg-black grid grid-rows-3 md:grid-flow-col gap-x-32 md:gap-x-20 lg:gap-x-40 gap-y-10 md:gap-y-20 lg:gap-y-10 justify-center">
+        <div class="space-x-4 py-4" v-for="todo in todos" :key="todo">
+          <div class="text-center h-full max-w-xs md:max-w-xs border border-white shadow bg-black border-white">
               <a href="#">
                   <img class="rounded-t-lg" src="" alt="" />
               </a>
               <div class="p-10">
                   <a href="#">
-                  <p class="mb-2 text-2xl font-normal tracking-widest text-white">   
+                  <p class="text-2xl font-normal tracking-widest text-white py-5">   
                     {{ todo.content }}
                   </p>
-                  <img :src="todo.imgURL" alt="" height="200" width="200">
+                  <img :src="todo.imgURL" alt="" height="300" width="300">
                   </a>
-                  <p class="mb-4 text-1xl font-semibold text-white tracking-widest">
+                  <p class="text-1xl font-semibold text-white tracking-widest py-5">
                     {{ todo.title }}
-                  </p>
-                  <p class="mb-3 text-1xl font-normal text-white">
-                    {{ todo.description }}
                   </p>
                   <p class="mb-3 text-1xl font-normal text-white">
                     {{ todo.artist }}
@@ -44,7 +42,12 @@
                   <p class="mb-3 text-1xl font-normal text-white">
                     {{ todo.venue }}
                   </p>
-              <button class="text-white font-bold text-2xl" @click="deleteTodo(todo.id)">X</button>
+                  <p class="mb-3 text-1xl font-normal text-white">
+                    {{ todo.description }}
+                  </p>
+                <div class="py-3">
+                  <button class="bg-transparent border border-white text-white font-bold py-2 px-4" @click="deleteTodo(todo.id)">SLET</button>
+                </div>
             </div>
           </div>
         </div>
@@ -81,7 +84,7 @@
             description: doc.data().description,
             artist: doc.data().artist,
             venue: doc.data().venue,
-            venue: doc.data().image,
+            image: doc.data().image,
             imgURL: doc.data().imgURL
             }
             fbTodos.push(todo)

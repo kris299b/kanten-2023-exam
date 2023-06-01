@@ -129,8 +129,8 @@ h1 {
 
 
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
+/* Small Devices, Phones */ 
+@media only screen and (min-width : 375px) {
     .boks1 {
         height: 200px;
     }
@@ -193,7 +193,7 @@ h1 {
 
 
 
-/* Small Devices, Tablets */
+/* Medium Devices, Tablets */
 @media only screen and (min-width : 768px) {
     .boks1 {
         height: 200px;
@@ -255,8 +255,8 @@ h1 {
 
 
 
-/* Medium Devices, Desktops */
-    @media only screen and (min-width : 992px) {
+/* Large Devices, Desktops */
+    @media only screen and (min-width : 1024px) {
     .boks1 {
         height: 250px;
     }
@@ -310,75 +310,6 @@ h1 {
         height: 400px;
     }
     .button {
-        margin-top: 10px;
-        padding: 5px;
-    }
-}
-
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-    .boks1 {
-        height: 250px;
-    }
-
-    .inner-boks1 {
-        height: 200px;
-        padding-top: 30px;
-        width: 70%;
-    }
-
-    h1 {
-        font-size: 45px;
-        font-weight: 600;
-        letter-spacing: 15px;
-        padding-bottom: 20px;
-    }
-
-    #paragraf {
-        font-size: 16px;
-    }
-
-    .boks2 {
-        height: 500px;
-        width: 100%;
-        display: flex;
-        padding-bottom: 40px;
-    }
-
-    .inner-boks2 {
-        height: 400px;
-        width: 33.3%;
-    }
-
-    #t-shirt{
-        height: 90%;
-    }
-
-    .inner-boks3 {
-        height: 400px;
-        width: 33.3%;
-    }
-
-    #hoodie{
-        height: 90%;
-    }
-
-    .inner-boks4 {
-        height: 400px;
-        width: 33.3%;
-    }
-
-    #sweatshirt{
-        height: 90%;
-    }
-
-    .inner-boks3 {
-        height: 400px;
-    }
-    .button {
-        font-weight: 600;
         margin-top: 10px;
         padding: 5px;
     }

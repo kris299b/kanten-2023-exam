@@ -5,7 +5,7 @@
         <div class="centered">
           <h1>KANTEN</h1>
           <h1 id="unge">- En ungdomsforening drevet af unge</h1>
-          <p id="kanten">Kanten bliver Esbjergs nye kulturfællesskab, drevet af Foreningen Kanten. Vores vision er at skabe en platform for det kreative vækstlag, som mangler en synlig plads i Esbjergs kulturliv. Gennem denne platform ønsker vi at støtte de fællesskaber der opstår af spirende kreative miljøer. Kanten vil give det underrepræsenterede vækstlag en scene at stå på - dette gør vi gennem en bred vifte af projekter der bl.a. indeholder events, klubaftener, øvelokaler og et lydstudie. </p>
+          <p id="kanten">Kanten bliver Esbjergs nye kulturfællesskab, drevet af Foreningen Kanten. Vores vision er at skabe en platform for det kreative vækstlag, som mangler en synlig plads i Esbjergs kulturliv. Kanten vil give det underrepræsenterede vækstlag en scene at stå på - dette gør vi gennem en bred vifte af projekter der bl.a. indeholder events, klubaftener, øvelokaler og et lydstudie. </p>
         </div>
       </div>
     </div>
@@ -119,7 +119,7 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
   color: #e7e7e7;
   padding-bottom: 0px;
@@ -127,7 +127,7 @@ h2 {
 
 p {
   color: #e7e7e7;
-  font-size: 16px;
+  font-size: 11px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align:justify;
 }
@@ -207,8 +207,8 @@ a:hover {
 
 
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
+/* Small Devices, Phones */ 
+@media only screen and (min-width : 375px) {
   .container1 {
     height: auto;
   }
@@ -217,46 +217,46 @@ a:hover {
   }
 
   .centered {
-    top: 20%;
-    left: 15%;
-    transform: translate(-8%, -50%);
+    top: 50%;
+    left: 10%;
+    transform: translate(-6%, -50%);
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 700;
-    padding-bottom: 5px;
+    padding-bottom: 0;
   }
 
   #unge {
-    font-size: 17px;
+    font-size: 12px;
     padding-bottom: 12px;
   }
 
   #kanten {
-    font-size: 14px;
+    font-size: 11px;
   }
   .item2 {
-    height: 320px;
+    height: 330px;
     width: 95%;
     padding: 5px;
     padding-top: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 0;
   }
   .item3 {
-    height: 250px;
+    height: 220px;
     width: 95%;
     padding: 5px;
-    padding-top: 20px;
+    padding-top: 0;
   }
 
   h2 {
-    font-size: 17px;
+    font-size: 15px;
     padding-bottom: 4px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   #kraftværket {
@@ -264,51 +264,75 @@ a:hover {
   }
 
   .container4 {
-    height: 400px;
-    padding-top: 40px;
-  }
+  height: 400px;
+  padding-top: 10px;
+}
 
-  .item4 {
-    width: 90%;
-  }
+.item4 {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: solid 1.5px;
+  border-left: solid 1.5px;
+  border-right: solid 1.5px;
+}
 
-  h3 {
-    font-size: 20px;
-    padding-left: 17px;
-  }
+h3 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 20px;
+  font-size: 18px;
+}
 
-  h4 {
-    font-size: 18px;
-  }
+h4 {
+  font-size: 16px;
+  color: #e7e7e7;
+  text-align: center;
+}
 
-  .item5 {
-    height: 150px;
-    width: 90%;
-    display: flex;
-  }
+.item5 {
+  height: 150px;
+  width: 90%;
+  display: flex;
+  margin: auto;
+  border-bottom: solid 1.5px;
+  border-left: solid 1.5px;
+  border-right: solid 1.5px;
+}
 
-  .inner-item1 {
-    width: 190px;
-    height: 80px;
-    margin: auto;
-  }
+.inner-item1 {
+  background-color: #000000;
+  width: 160px;
+  height: 80px;
+  margin: auto;
+}
 
 
-  .inner-item2 {
-    width: 150px;
-    height: 80px;
-    margin: auto;
-  }
+.inner-item2 {
+  width: 120px;
+  height: 80px;
+  margin: auto;
+}
 }
 
 
 
-/* Small Devices, Tablets */
+/* Medium Devices, Tablets */
 @media only screen and (min-width : 768px) {
   .container1 {
     height: auto;
   }
 
+  #unge {
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 20px;
+  }
+
+  #kanten {
+    font-size: 14px;
+  }
   .centered {
     top: 50%;
     left: 17%;
@@ -320,8 +344,54 @@ a:hover {
   .item2 {
     height: 260px;
   }
-  .item3 {
-    height: 240px;
+
+  .container4 {
+    height: 400px;
+    padding-top: 10px;
+  }
+
+.item4 {
+  width: 50%;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 20px;
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.item5 {
+  height: 130px;
+  width: 50%;
+  display: flex;
+  margin: auto;
+}
+
+.inner-item1 {
+  width: 190px;
+  height: 80px;
+  margin: auto;
+}
+
+
+.inner-item2 {
+  width: 150px;
+  height: 80px;
+  margin: auto;
+}
+  
+  h1 {
+    font-size: 30px;
+    letter-spacing: 15px;
   }
 
   h2 {
@@ -336,8 +406,8 @@ a:hover {
 
 
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+/* large Devices, Desktops */
+@media only screen and (min-width : 1024px) {
   .container1 {
     height: auto;
   }
@@ -399,7 +469,7 @@ a:hover {
 
 
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width : px) {
   .container1 {
     height: auto;
   }
@@ -409,24 +479,24 @@ a:hover {
   
   .centered {
     top: 50%;
-    left: 20%;
-    transform: translate(-10%, -50%);
+    left: 10%;
+    transform: translate(-6%, -50%);
   }
 
   h1 {
-    font-size: 45px;
-    padding-bottom: 20px;
+    font-size: 18px;
+    padding-bottom: 0;
     letter-spacing: 8px;
   }
 
   #unge {
-    font-size: 20px;
+    font-size: 14px;
     letter-spacing: 0px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
   }
 
   #kanten {
-    font-size: 16px;
+    font-size: 12px;
   }
   .container2 {
     margin: 0;
@@ -451,7 +521,7 @@ a:hover {
   }
 
   p {
-    font-size: 16px;
+    font-size: 12px;
   }
   .container3 {
     padding-bottom: 40px;

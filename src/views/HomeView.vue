@@ -4,13 +4,13 @@
         <div class="flex items-center">
           <div class="h-screen w-screen text-center bg-black bg-opacity-10">
             <div>
-              <p class="font-sans sm:Roboto md:block font-sans text-4xl sm:text-7xl md:text-6xl lg:text-8xl text-black font-semibold mt-3 sm:mt-20 md:mt-10 lg:mt-20 tracking-widest">KANTEN</p>
-              <p class="font-sans sm:Roboto md:block font-sans text-xs sm:text-2xl md:text-sm lg:text-2xl text-white font-normal mt-1 sm:mt-2 mb-5 tracking-widest">KULTUR | MUSIK | FÆLLESSKAB</p>
+              <p class="font-sans sm:Roboto md:block font-sans text-4xl sm:text-7xl md:text-6xl lg:text-8xl text-black font-semibold mt-5 md:mt-10 lg:mt-20 tracking-widest">KANTEN</p>
+              <p class="font-sans sm:Roboto md:block font-sans text-xs sm:text-2xl md:text-lg lg:text-2xl text-white font-normal mt-1 md:mt-1 lg:mt-2 mb-4 tracking-widest">KULTUR | MUSIK | FÆLLESSKAB</p>
             </div>
-            <button class="invisible sm:visible text-sm md:text-xs lg:text-sm font-bold bg-black hover:bg-black text-white font-bold hover:text-white py-1 px-4 sm:py-2 mr-5 border-2 border border-black hover:border-black tracking-widest">
+            <button class="invisible sm:visible text-sm md:text-xs lg:text-sm font-bold bg-black hover:bg-black text-white font-bold hover:text-white py-1 px-4 sm:py-2 mr-5 border-2 border border-black hover:border-blak tracking-widest">
             <RouterLink to="/events">SE EVENTS</RouterLink>
             </button>
-            <button class="invisible sm:visible text-sm md:text-xs lg:text-sm font-bold bg-transparent hover:bg-black text-black font-bold hover:text-white py-1 px-4 sm:py-2 sm:px-4 border-2 border border-black hover:border-black tracking-widest">
+            <button class="invisible sm:visible text-sm md:text-xs lg:text-sm font-bold bg-transparent hover:bg-orange-400 text-black font-bold hover:text-white py-1 px-4 sm:py-2 sm:px-4 border-2 border border-black hover:border-orange-400 tracking-widest">
             <RouterLink to="/frivillig">BLIV FRIVILLIG</RouterLink>
             </button>
           </div>
@@ -21,8 +21,8 @@
 
 
 <!--Dette område er Mailchimp-signup-->
-<div class="mailchimp-område">
-  <div class="tilmelding">TILMELD DIG VORES NYHEDSBREV</div>
+<div class="mailchimp-område py-10">
+  <div class="tilmelding tracking-widest">TILMELD DIG VORES NYHEDSBREV</div>
 <div id="mc_embed_signup">
 <form action="https://gmail.us21.list-manage.com/subscribe/post?u=4647b8b842810351f756a5c6d&amp;id=322f56a61f&amp;f_id=003354e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
@@ -67,9 +67,9 @@
 }
 
 .tilmelding {
-  font-weight: 600;
-  font-size: 30px;
-  color: #e6e6e6;
+  font-weight: 300;
+  font-size: 20px;
+  color: #e5e5e5;
   padding-bottom: 20px;
   padding-top: 40px;
   text-align: center;
@@ -81,7 +81,7 @@
 }
 
 .mc-field-group {
-  color: #e6e6e6;
+  color: #a89393;
 }
 
 .indicates-required {
@@ -90,45 +90,46 @@
 }
 
 #mce-FNAME {
-  color: #e6e6e6;
-  border: #e6e6e6;
-  background-color: #303030;
+  color: black;
+  border: #e5e5e5;
+  background-color: #e5e5e5;
   border-radius: 0%;
 }
 
 #mce-LNAME {
-  color: #e6e6e6;
-  border: #e6e6e6;
-  background-color: #303030;
+  color: black;
+  border: #e5e5e5;
+  background-color: #e5e5e5;
   border-radius: 0%;
 }
 
 #mce-EMAIL {
-  color: #e6e6e6;
-  border: #e6e6e6;
-  background-color: #303030;
+  color: black;
+  border:  #e5e5e5;
+  background-color: #e5e5e5;
   border-radius: 0%;
 }
 
 #mc-embedded-subscribe {
-  color: #e6e6e6;
   background-color: black;
-  border:solid #e6e6e6;
-  font-weight: 600;
+  border: 2px solid #e5e5e5;
+  font-weight: 500;
   border-radius: 0%;
+  font-weight: bold;
 }
 
 #mc-embedded-subscribe:hover {
   color: black;
   background-color: #fb923c;
   border-color: #fb923c;
+  font-weight: bold;
 }
 
 
 
 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
+/* Small Devices, Phones */ 
+@media only screen and (min-width : 375px) {
   .mailchimp-område {
     height: 480px;
   }
@@ -141,7 +142,7 @@
 
   #mc_embed_signup {
     background-color: rgb(0, 0, 0);
-    width: 70%;
+    width: 90%;
     margin: auto;
   }
   .mc-field-group {
@@ -158,10 +159,10 @@
 
 
 
-/* Small Devices, Tablets */
+/* Medium Devices, Tablets */
 @media only screen and (min-width : 768px) {
   .mailchimp-område {
-    height: 450px;
+    height: 500px;
   }
 
   .tilmelding {
@@ -192,10 +193,10 @@
 
 
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
+/* Large Devices, Desktops */
+@media only screen and (min-width : 1024px) {
   .mailchimp-område {
-    height: 500px;
+    height: 550px;
   }
 
   .tilmelding {
@@ -223,38 +224,6 @@
 
   #mc-embedded-subscribe {
     font-size: 16px;
-  }
-}
-
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-  .mailchimp-område {
-    height: 600px;
-  }
-
-  .tilmelding {
-    font-size: 35px;
-    padding-bottom: 30px;
-    padding-top: 40px;
-  }
-
-  #mc_embed_signup {
-    width: 40%;
-    font-size: 16px;
-  }
-
-  .mc-field-group {
-    font-size: 16px;
-  }
-
-  .indicates-required {
-    font-size: 20px;
-  }
-
-  #mc-embedded-subscribe {
-    font-size: 15px;
   }
 }
 </style>
