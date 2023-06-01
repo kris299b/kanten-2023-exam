@@ -127,35 +127,6 @@
 
 
 
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
-  .mailchimp-område {
-    background-color: rgb(0, 0, 0);
-    height: 350px;
-  }
-  .tilmelding {
-    font-size: 14px;
-    padding-bottom: 10px;
-    padding-top: 15px;
-  }
-
-  #mc_embed_signup {
-    width: 90%;
-  }
-
-  .mc-field-group {
-    font-size: 12px;
-    padding-top: 15px;
-  }
-
-  #mc-embedded-subscribe {
-    font-size: 12px;
-    margin-top: 10px;
-  }
-}
-
-
-
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
   .mailchimp-område {
