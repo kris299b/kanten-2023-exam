@@ -1,52 +1,72 @@
 <template>
-<nav class="sticky top-0 z-30 flex items-center justify-between flex-wrap bg-black p-2">
-  <div class="flex items-center flex-shrink-0 text-white">
-    <RouterLink to="/">
-    <img alt="Vue logo" class="logo ml-5" src="./assets/Logo Standart neg.png" width="50" height="50" />
-    </RouterLink>
-  </div>
-  <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto text-center">
-    <div class="text-sm font-normal lg:flex-grow">
-      <RouterLink to="/events">
-      <a href="#responsive-header" class="font-sans sm:Roboto block mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
-        EVENTS
-      </a>
-      </RouterLink>
-      <RouterLink to="/program">
-      <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
-        PROGRAM
-      </a>
-      </RouterLink>
-      <RouterLink to="/frivillig">
-      <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
-        FRIVILLIG
-      </a>
-      </RouterLink>
-      <RouterLink to="/merch">
-      <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
-        MERCH
-      </a>
-      </RouterLink>
-      <RouterLink to="/about">
-      <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
-        OM
-      </a>
-      </RouterLink>
-      <RouterLink to="/admin">
-      <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
-        ADMIN
-      </a>
-      </RouterLink>
-      <RouterLink to="/kontakt">
-      <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
-        KONTAKT
-      </a>
+<header class="bg-black sm:flex sm:justify-between">
+  <div class="flex items-center justify-between ml-3 mr-3">
+    <div>
+      <RouterLink to="/">
+      <img alt="Vue logo" class="logo sm:ml-3 py-3" src="./assets/Logo Standart neg.png" width="50" height="50" />
       </RouterLink>
     </div>
+    <div class="sm:invisible flex items-center gap-3">
+      <button @click="isOpen = !isOpen" type="button" class="block text-white hover:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor" class="block h-4 w-4 fill-current">
+          <path v-if="isOpen" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+        <svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path v-if="!isOpen" d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+        </svg>
+      </button>
+    </div>
   </div>
-  <img alt="Login icon" class="icon mr-5" src="./assets/login-icon.png" width="17" height="17" />
-</nav>
+    <div :class="isOpen ? 'block' : 'hidden'" class="items-center justify-between py-5 pt-3 mx-auto sm:flex text-xs md:text-xs lg:text-xs">
+      <RouterLink to="/events">
+        <a href="#responsive-header" class="sm:visible font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+          EVENTS
+        </a>
+        </RouterLink>
+        <RouterLink to="/frivillig">
+        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+          FRIVILLIG
+        </a>
+        </RouterLink>
+        <RouterLink to="/merch">
+        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+          MERCH
+        </a>
+        </RouterLink>
+        <RouterLink to="/about">
+        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+          OM
+        </a>
+        </RouterLink>
+        <RouterLink to="/admin">
+        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+          ADMIN
+        </a>
+        </RouterLink>
+        <RouterLink to="/kontakt">
+        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+          KONTAKT
+        </a>
+        </RouterLink>
+        <RouterLink to="/register">
+        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-white hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+          OPRET BRUGER 
+        </a>
+        </RouterLink>
+    </div>
+    <div class="md:py-4 lg:py-3 ">
+      <button class="font-sans sm:Roboto bg-transparent text-white text-sm px-5 py-2 sm:mr-3 text-xs md:text-xs lg:text-xs">
+        <RouterLink to="/login">LOG IND</RouterLink>
+      </button>
+    </div>
+    <div class="md:py-4 lg:py-3 ">
+      <button class="font-sans sm:Roboto bg-transparent text-white text-sm px-5 py-2 sm:mr-3 text-xs md:text-xs lg:text-xs" @click="logOut" >LOG UD</button>
+    </div>
+    <div>
+  </div>
+</header>
 <RouterView/>
+
 
 <!--Footer container-->
 <footer class="bg-black text-center text-white dark:bg-black">
@@ -82,11 +102,67 @@
   </div>
 </footer>
 
-
 </template>
 
+<!-- <script>
+export default{
+  data() {
+    return {
+      isOpen: false, 
+    }
+  }
+}
+</script> -->
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+
+
+import { RouterLink, RouterView, routerKey } from 'vue-router'
+
+import { onMounted } from 'vue';
+import {getAuth, onAuthStateChanged, signOut} from "firebase/auth";
+import { ref } from 'vue';
+
+import { db } from "@/firebase";
+const auth = getAuth();
+const logOut = () => {
+  console.log("test")
+  signOut(auth).then(() => {
+    // Sign-out successful.
+    console.log('user logged out', auth.currentUser)
+   // router.push('/login')
+  }).catch((error) => {
+    console.log(error)
+    // An error happened.
+  });
+}
+
+
+/* 
+let auth;
+onMounted (() => {
+auth = getAuth(); 
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      isLoggedIn.value = true;
+    } else {
+      isLoggedIn.value = false; 
+    }
+  });
+}); */
+
+// const handleSignOut = () => {
+ 
+//   signOut(auth).then(() => {
+//     console.log(auth, "logged out")
+//   // Sign-out successful.
+// }).catch((error) => {
+//   // An error happened.
+// });
+// /* const isLoggedIn = ref(false);
+//   signOut(auth).then(() => {
+//     router.push("/");
+//   }); */
+// };
 </script>
 
 

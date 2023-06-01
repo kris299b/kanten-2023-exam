@@ -1,27 +1,29 @@
-<template>        
+<template>   
   <div class="relative overflow-hidden bg-cover bg-no-repeat">
       <div class="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed">
         <div class="flex items-center">
           <div class="h-screen w-screen text-center bg-black bg-opacity-10">
-            <p class="font-sans sm:Roboto hidden md:block font-sans text-8xl text-black font-semibold mt-20 tracking-widest">KANTEN</p>
-            <p class="font-sans sm:Roboto hidden md:block font-sans text-2xl text-white font-normal mt-2 mb-5 tracking-widest">KULTUR | MUSIK | FÆLLESSKAB</p>
-            <button class="text-sm font-bold bg-black hover:bg-black text-white font-bold hover:text-white py-2 px-4 mr-5 border-2 border border-black hover:border-white tracking-widest">
+            <div>
+              <p class="font-sans sm:Roboto md:block font-sans text-4xl sm:text-7xl md:text-6xl lg:text-8xl text-black font-semibold mt-3 sm:mt-20 md:mt-10 lg:mt-20 tracking-widest">KANTEN</p>
+              <p class="font-sans sm:Roboto md:block font-sans text-xs sm:text-2xl md:text-sm lg:text-2xl text-white font-normal mt-1 sm:mt-2 mb-5 tracking-widest">KULTUR | MUSIK | FÆLLESSKAB</p>
+            </div>
+            <button class="invisible sm:visible text-sm md:text-xs lg:text-sm font-bold bg-black hover:bg-black text-white font-bold hover:text-white py-1 px-4 sm:py-2 mr-5 border-2 border border-black hover:border-black tracking-widest">
             <RouterLink to="/events">SE EVENTS</RouterLink>
             </button>
-            <button class="text-sm font-bold bg-transparent hover:bg-black text-black font-bold hover:text-white py-2 px-4 border-2 border border-black hover:border-black tracking-widest">
+            <button class="invisible sm:visible text-sm md:text-xs lg:text-sm font-bold bg-transparent hover:bg-black text-black font-bold hover:text-white py-1 px-4 sm:py-2 sm:px-4 border-2 border border-black hover:border-black tracking-widest">
             <RouterLink to="/frivillig">BLIV FRIVILLIG</RouterLink>
             </button>
           </div>
         </div>
       </div>
-    <img class="image" src="../assets/kollage.jpg" alt="">
+    <img class="image" src="../assets/kanten.jpg" alt="">
   </div>
 
-  <section class="bg-white dark:bg-black">
+  <section class="dark:bg-black">
   <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
       <div class="mx-auto max-w-screen-md sm:text-center">
-          <p class="mb-4 text-2xl font-normal sm:text-4xl text-white tracking-widest">NYHEDSBREV</p>
-          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 sm:text-xl dark:text-gray-400">Tilmeld dig vores nyhedsbrev med din email, og hold dig opdateret på vores events, og fede arrangementer. </p>
+          <p class="mb-4 font-normal text-md text-center text-lg md:text-2xl lg:text-3xl text-white tracking-widest">NYHEDSBREV</p>
+          <p class="mx-auto mb-8 max-w-2xl font-light text-gray-500 md:mb-12 text-sm md:text-lg lg:text-xl dark:text-gray-400">Tilmeld dig vores nyhedsbrev med din email, og hold dig opdateret på vores events, og fede arrangementer. </p>
           <form action="#">
               <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                   <div class="relative w-full">
