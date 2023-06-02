@@ -70,8 +70,8 @@
 
 <!--Footer container-->
 <footer class="bg-black text-white"> 
-  <div class="container pt-1 w-1/2 ml-10">
-    <div class="flex justify-end gap-x-6 mb-1 mt-3">
+  <div class="container pt-1 w-1/2 ml-10 lg:ml-6">
+    <div class="flex justify-end gap-x-6 md:gap-x-6 lg:gap-x-3 mb-1 mt-3">
       <a href="#!" class="text-neutral-800 dark:text-neutral-200">
         <a href="https://www.facebook.com/kanten.esbjerg">
           <svg
@@ -109,6 +109,7 @@
 </template>
 
 <script>
+
 export default{
   data() {
     return {
@@ -116,6 +117,7 @@ export default{
     }
   }
 }
+
 </script> 
 
 <script setup>
@@ -138,6 +140,7 @@ const logOut = () => {
     // An error happened.
   });
 }
+
 
 </script>
 
