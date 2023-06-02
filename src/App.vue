@@ -3,7 +3,7 @@
   <div class="flex items-center justify-between ml-3 mr-3">
     <div>
       <RouterLink to="/">
-      <img alt="Vue logo" class="logo sm:ml-3 py-3" src="./assets/Logo Standart neg.png" width="50" height="50" />
+      <img alt="Vue logo" class="logo sm:ml-3 py-3" src="./assets/Logo-Standart-neg.png" width="50" height="50" />
       </RouterLink>
     </div>
     <div class="sm:invisible flex items-center gap-3">
