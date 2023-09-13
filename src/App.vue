@@ -1,12 +1,12 @@
 <template>
-<header class="bg-black sm:flex sm:justify-between">
+<header class="sticky top-0 z-30 bg-black sm:flex sm:justify-between py-1">
   <div class="flex items-center justify-between ml-3 mr-3">
     <div>
       <RouterLink to="/">
-      <img alt="Vue logo" class="logo sm:ml-3 py-3" src="./assets/Logo-Standart-neg.png" width="50" height="50" />
+      <img alt="Vue logo" class="logo sm:ml-3 py-3 md:py-0 lg:py-0" src="./assets/Logo-Standart-neg.png" width="35" height="35" />
       </RouterLink>
     </div>
-    <div class="sm:invisible flex items-center gap-3">
+    <div class="visible md:invisible lg:invisible flex items-center gap-3">
       <button @click="isOpen = !isOpen" type="button" class="block text-white hover:text-white">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20" stroke="currentColor" class="block h-4 w-4 fill-current">
           <path v-if="isOpen" stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -17,29 +17,29 @@
       </button>
     </div>
   </div>
-    <div :class="isOpen ? 'block' : 'hidden'" class="items-center justify-between py-5 pt-3 mx-auto sm:flex text-xs md:text-xs lg:text-xs">
+    <div :class="isOpen ? 'block' : 'hidden'" class="font-sans roboto items-center justify-between mx-auto sm:flex text-xs md:text-xs lg:text-xs tracking-widest">
       <RouterLink to="/events">
-        <a href="#responsive-header" class="sm:visible font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+        <a href="#responsive-header" class="block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
           EVENTS
         </a>
         </RouterLink>
         <RouterLink to="/frivillig">
-        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+        <a href="#responsive-header" class="block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
           FRIVILLIG
         </a>
         </RouterLink>
         <RouterLink to="/merch">
-        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+        <a href="#responsive-header" class="block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
           MERCH
         </a>
         </RouterLink>
         <RouterLink to="/about">
-        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+        <a href="#responsive-header" class="block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
           OM
         </a>
         </RouterLink>
         <RouterLink to="/admin">
-        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
+        <a href="#responsive-header" class="block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
           ADMIN
         </a>
         </RouterLink>
@@ -48,77 +48,82 @@
           KONTAKT
         </a>
         </RouterLink>
-        <RouterLink to="/register">
-        <a href="#responsive-header" class="font-sans sm:Roboto block ml-5 mt-2 lg:inline-block lg:mt-0 text-neutral-200 hover:text-white mr-5 [&.active]:text-black/90 lg:p-2 link link-underline link-underline-black">
-          OPRET BRUGER 
-        </a>
-        </RouterLink>
-    </div>
-    <div class="py-5 md:py-4 lg:py-3 ">
-      <button class="font-sans sm:Roboto bg-transparent text-neutral-200 text-sm px-5 py-2 sm:mr-3 text-xs md:text-xs lg:text-xs">
-        <RouterLink to="/login">LOG IND</RouterLink>
-      </button>
-    </div>
-    <div class="md:py-4 lg:py-3 ">
-      <button class="font-sans sm:Roboto bg-transparent text-neutral-200 text-sm px-5 py-2 sm:mr-3 text-xs md:text-xs lg:text-xs" @click="logOut" >LOG UD</button>
-    </div>
+      </div>
+      <div v-if="isLoggedIn" class="py-0 md:py-4 lg:py-3">
+        <button  class="font-sans sm:Roboto bg-transparent text-neutral-200 text-sm px-5 py-2 md:py-0 lg:py-1 sm:mr-3 text-xs md:text-xs lg:text-xs tracking-widest" @click="logOut" >LOG UD</button>
+      </div>
+        <div v-else class="py-0 md:py-4 lg:py-3">
+        <button  class="font-sans sm:Roboto bg-transparent text-neutral-200 text-sm px-5 py-2 md:py-0 lg:py-1 sm:mr-3 text-xs md:text-xs lg:text-xs tracking-widest">
+          <RouterLink to="/login">LOG IND</RouterLink>
+        </button>
+      </div>
     <div>
   </div>
 </header>
 <RouterView/>
 
 
-<!--Footer container-->
-<footer class="bg-black text-white"> 
-  <div class="container pt-1 w-1/2 ml-10 lg:ml-6">
-    <div class="flex justify-end gap-x-6 md:gap-x-6 lg:gap-x-3 mb-1 mt-3">
-      <a href="#!" class="text-neutral-800 dark:text-neutral-200">
-        <a href="https://www.facebook.com/kanten.esbjerg">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4"
-            fill="currentColor"
-            viewBox="0 0 24 24">
-            <path
-              d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
-          </svg>
-        </a>
-      </a>
-      <a href="#!" class="text-neutral-800 dark:text-neutral-200">
-        <a href="https://www.instagram.com/kanten_esbjerg/">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-4 w-4"
-            fill="currentColor"
-            viewBox="0 0 24 24">
-            <path
-              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-          </svg>
-        </a>
-      </a>
+<footer class="bg-black dark:bg-black">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-between">
+          <RouterLink to="/">
+            <img alt="Vue logo" class="logo sm:ml-3 py-3 md:py-0 lg:py-0" src="./assets/Logo-Standart-neg.png" width="35" height="35" />
+          </RouterLink>
+            <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-neutral-200 sm:mb-0 dark:text-neutral-200">
+                <li>
+                  <RouterLink to="/about">
+                    <a href="#" class="mr-4 md:mr-6 ">Om</a>
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/frivillig">
+                    <a href="#" class="mr-4  md:mr-6">Frivillig</a>
+                  </RouterLink>
+                </li>
+                <li>
+                  <RouterLink to="/kontakt">
+                    <a href="#" class="mr-4 md:mr-6 ">Kontakt</a>
+                  </RouterLink>
+                </li>
+            </ul>
+        </div>
+        <hr class="my-6 border-neutral-200 sm:mx-auto dark:border-neutral-200 lg:my-8" />
+        <div class="flex mt-4 space-x-3 justify-center md:justify-center lg:justify-center sm:mt-0">
+            <a href="#">
+              <a href="https://www.facebook.com/kanten.esbjerg">
+                <svg class="w-5 h-5" fill="white" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                <span class="sr-only">Facebook page</span>
+              </a>
+            </a>
+            <a href="#">
+              <a href="https://www.instagram.com/kanten_esbjerg/">
+                <svg class="w-5 h-5" fill="white" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                <span class="sr-only">Instagram page</span>
+              </a>
+            </a>
+            <a href="#">
+              <a href="https://discord.com/login">
+                <svg
+                class="h-5 w-5"
+                fill="white"
+                viewbox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd">
+                <path
+                  d="M19.54 0c1.356 0 2.46 1.104 2.46 2.472v21.528l-2.58-2.28-1.452-1.344-1.536-1.428.636 2.22h-13.608c-1.356 0-2.46-1.104-2.46-2.472v-16.224c0-1.368 1.104-2.472 2.46-2.472h16.08zm-4.632 15.672c2.652-.084 3.672-1.824 3.672-1.824 0-3.864-1.728-6.996-1.728-6.996-1.728-1.296-3.372-1.26-3.372-1.26l-.168.192c2.04.624 2.988 1.524 2.988 1.524-1.248-.684-2.472-1.02-3.612-1.152-.864-.096-1.692-.072-2.424.024l-.204.024c-.42.036-1.44.192-2.724.756-.444.204-.708.348-.708.348s.996-.948 3.156-1.572l-.12-.144s-1.644-.036-3.372 1.26c0 0-1.728 3.132-1.728 6.996 0 0 1.008 1.74 3.66 1.824 0 0 .444-.54.804-.996-1.524-.456-2.1-1.416-2.1-1.416l.336.204.048.036.047.027.014.006.047.027c.3.168.6.3.876.408.492.192 1.08.384 1.764.516.9.168 1.956.228 3.108.012.564-.096 1.14-.264 1.74-.516.42-.156.888-.384 1.38-.708 0 0-.6.984-2.172 1.428.36.456.792.972.792.972zm-5.58-5.604c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332.012-.732-.54-1.332-1.224-1.332zm4.38 0c-.684 0-1.224.6-1.224 1.332 0 .732.552 1.332 1.224 1.332.684 0 1.224-.6 1.224-1.332 0-.732-.54-1.332-1.224-1.332z" />
+                </svg>
+              </a>
+            </a>
+        </div>
+        <div class="bg-black text-sm md:text-sm lg:text-sm pt-4 md:pt-4 lg:pt-4 text-center text-white md:text-white lg:text-white dark:bg-black light:bg-black dark:text-white light:text-white">
+          © 2023 Copyright: Kanten
+        </div>
     </div>
-  </div>
-
-  <!--Copyright section-->
-  <div
-    class="bg-black p-3 text-center text-neutral-700 dark:bg-black dark:text-neutral-200">
-    © 2023 Copyright: Kanten
-  </div>
 </footer>
 
 </template>
 
-<script>
-
-export default{
-  data() {
-    return {
-      isOpen: false, 
-    }
-  }
-}
-
-</script> 
 
 <script setup>
 
@@ -128,6 +133,10 @@ import {getAuth, onAuthStateChanged, signOut} from "firebase/auth";
 import { ref } from 'vue';
 
 import { db } from "@/firebase";
+
+let isOpen = ref(false)
+
+
 const auth = getAuth();
 const logOut = () => {
   console.log("test")
@@ -140,6 +149,23 @@ const logOut = () => {
     // An error happened.
   });
 }
+
+
+let isLoggedIn = ref(false); 
+
+
+
+onMounted(() => {
+  onAuthStateChanged(auth, (user) =>{
+    if (user) {
+      isLoggedIn.value = true
+      console.log('user logged in', auth.currentUser)
+    } else {
+      isLoggedIn.value = false
+      console.log('user logged out', auth.currentUser)
+    }
+  })
+})
 
 
 </script>
@@ -164,4 +190,5 @@ const logOut = () => {
 		background-size: 100% 2px;
 		background-position: 0 100%
 	}
+
 </style>
